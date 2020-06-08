@@ -1,0 +1,11 @@
+[Image]
+Architecture: amd64
+Archive-Areas: main
+Distribution-Chroot: kaisen-rolling
+Distribution-Binary: kaisen-rolling
+Mirror-Bootstrap: https://kaisendeb.lf.je
+
+[FIXME]
+Configuration-Version: 1:20191221+kaisen1
+Name: kaisenlinuxrolling1.1
+Type: iso-hybrid

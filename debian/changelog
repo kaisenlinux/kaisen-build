@@ -1,0 +1,30 @@
+kaisen-build (1.0+kaisen5) kaisen-testing; urgency=medium
+
+  * Remove kaisen-build/.build folder (fix not functional config script)
+  * Create prerm script for cleaning chroot, cache and .build folders
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 07 Jun 2020 01:04:36 +0200
+
+kaisen-build (1.0+kaisen4) kaisen-testing; urgency=medium
+
+  * Adding new default splash.png (background created by Tobas)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 06 Jun 2020 23:57:51 +0200
+
+kaisen-build (1.0+kaisen3) kaisen-testing; urgency=medium
+
+  * Fix GUI installer not functionnal
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Fri, 05 Jun 2020 04:07:57 +0200
+
+kaisen-build (1.0+kaisen2) kaisen-testing; urgency=medium
+
+  * /boot/grub/grub.cfg update entries
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Fri, 05 Jun 2020 02:03:26 +0200
+
+kaisen-build (1.0+kaisen1) kaisen-testing; urgency=medium
+
+  * Create build folder for build Kaisen Linux ISO
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Wed, 03 Jun 2020 00:40:46 +0200

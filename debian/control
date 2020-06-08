@@ -1,0 +1,19 @@
+Source: kaisen-build
+Priority: optional
+Section: kaisen-packages
+Standards-Version: 4.4.0
+Build-Depends: debhelper
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Rules-Requires-Root: no
+Homepage: https://kaisen-linux.org/
+
+Package: kaisen-build
+Architecture: all
+Priority: standard
+Depends: live-build,
+	 live-boot,
+	 live-manual,
+	 live-config,
+	 debootstrap,
+Description: Kaisen Linux ISO build
