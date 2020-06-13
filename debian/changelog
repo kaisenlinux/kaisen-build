@@ -1,3 +1,9 @@
+kaisen-build (1.0+kaisen6) kaisen-devel; urgency=medium
+
+  * Adding grsync and remmina launchers at hook script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 13 Jun 2020 22:33:57 +0200
+
 kaisen-build (1.0+kaisen5) kaisen-testing; urgency=medium
 
   * Remove kaisen-build/.build folder (fix not functional config script)
