@@ -1,3 +1,9 @@
+kaisen-build (1.1) kaisen-devel; urgency=medium
+
+  * Adding kaisen-network-tools at config/package-lists/kaisen.list.chroot
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Mon, 15 Jun 2020 07:21:15 +0200
+
 kaisen-build (1.0+kaisen6) kaisen-devel; urgency=medium
 
   * Adding grsync and remmina launchers at hook script
