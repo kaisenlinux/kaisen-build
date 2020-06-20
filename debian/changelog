@@ -1,3 +1,11 @@
+kaisen-build (1.1+kaisen1) kaisen-devel; urgency=medium
+
+  * Remove config/includes.chroot/usr/lib/live/config/0031-kaisen-password script
+    (this script is now integrated at live-config package)
+  * Replace "Kaisen Linux Rolling" to "Kaisen Linux Rolling" at --iso-volume
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 20 Jun 2020 18:17:34 +0200
+
 kaisen-build (1.1) kaisen-devel; urgency=medium
 
   * Adding kaisen-network-tools at config/package-lists/kaisen.list.chroot

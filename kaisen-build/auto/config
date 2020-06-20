@@ -32,7 +32,7 @@ lb config noauto \
 --iso-application "Kaisen Linux Rolling" \
 --iso-preparer "Kaisen Linux team" \
 --iso-publisher "Kevin Chevreuil - Kaisen" \
---iso-volume "Kaisen Linux Rolling 1.0" \
+--iso-volume "Kaisen Linux Rolling" \
 --keyring-package "kaisen-archive-keyring" \
 --memtest "memtest86+" \
 --security "false" \
