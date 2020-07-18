@@ -9,11 +9,11 @@ Rules-Requires-Root: no
 Homepage: https://kaisen-linux.org/
 
 Package: kaisen-build
-Architecture: all
+Architecture: amd64
 Priority: standard
-Depends: live-build,
+Depends: live-build (>=1:20191221+kaisen1),
 	 live-boot,
 	 live-manual,
-	 live-config,
-	 debootstrap,
-Description: Kaisen Linux ISO build
+	 live-config (>=11.0.1+kaisen1),
+	 debootstrap (>=1.0.123+kaisen1),
+Description: Kaisen Linux ISO build (amd64 arch)

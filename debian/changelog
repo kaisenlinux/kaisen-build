@@ -1,8 +1,20 @@
+kaisen-build (1.2) kaisen-testing; urgency=medium
+
+  * Adding kaisen-build script (for replace lb build command and adding build options)
+  * Delete config folder
+  * Adding variant folder, for adding kde, mate, xfce, and lxde profiles
+  * Changing postinst and delete postrm file
+  * Adding postrm script to delete /home/*/kaisen-build folder installed by postinst
+    script
+  * Update configurations for Rolling 1.2 revision
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 11 Jul 2020 02:56:53 +0200
+
 kaisen-build (1.1+kaisen1) kaisen-devel; urgency=medium
 
   * Remove config/includes.chroot/usr/lib/live/config/0031-kaisen-password script
     (this script is now integrated at live-config package)
-  * Replace "Kaisen Linux Rolling" to "Kaisen Linux Rolling" at --iso-volume
+  * Replace "Kaisen Linux Rolling" to "Kaisen Linux Rolling" at --iso-volume 
 
  -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 20 Jun 2020 18:17:34 +0200
 

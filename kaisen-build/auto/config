@@ -1,5 +1,10 @@
-#!/bin/sh
-#Build script for Kaisen Linux
+#!/bin/bash
+
+#ISO build script for Kaisen Linux
+
+set -e
+
+cp -rfTL variant/$variant config
 
 lb config noauto \
 --apt "apt" \
@@ -29,10 +34,10 @@ lb config noauto \
 --linux-flavours "amd64" \
 --linux-packages "linux-image" \
 --loadlin "true" \
---iso-application "Kaisen Linux Rolling" \
---iso-preparer "Kaisen Linux team" \
+--iso-application "Kaisen Linux Rolling $variant $version" \
+--iso-preparer "Kevin Chevreuil - Kaisen" \
 --iso-publisher "Kevin Chevreuil - Kaisen" \
---iso-volume "Kaisen Linux Rolling" \
+--iso-volume "Kaisen Linux Rolling $variant $version" \
 --keyring-package "kaisen-archive-keyring" \
 --memtest "memtest86+" \
 --security "false" \

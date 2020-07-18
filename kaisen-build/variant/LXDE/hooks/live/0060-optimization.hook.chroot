@@ -1,0 +1,113 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable anydesk
+sudo systemctl disable arpwatch
+sudo systemctl disable avahi-daemon
+sudo systemctl disable avahi-daemon.socket
+sudo systemctl disable bacula-fd
+sudo systemctl disable bacula-sd
+sudo systemctl disable clamav-daemon
+sudo systemctl disable blueman-mechanism
+sudo systemctl disable bluetooth
+sudo systemctl disable ceph-fuse.target
+sudo systemctl disable clamav-freshclam
+sudo systemctl disable cups-browsed
+sudo systemctl disable cups
+sudo systemctl disable docker
+sudo systemctl disable docker.socket
+sudo systemctl disable e2scrub_all.timer
+sudo systemctl disable e2scrub_reap
+sudo systemctl disable etc-setserial
+sudo systemctl disable hostapd
+sudo systemctl disable ip6tables
+sudo systemctl disable iptables
+sudo systemctl disable irqbalance
+sudo systemctl disable lm-sensors
+sudo systemctl disable lockdown
+sudo systemctl disable lxcfs
+sudo systemctl disable lxc-net
+sudo systemctl disable lxc
+sudo systemctl disable netfilter-persistent
+sudo systemctl disable nfs-client.target
+sudo systemctl disable nfs-kernel-server
+sudo systemctl disable nfs-server
+sudo systemctl disable ntp
+sudo systemctl disable o2cb
+sudo systemctl disable ocfs2
+sudo systemctl disable open-vm-tools
+sudo systemctl disable openvpn
+sudo systemctl disable portmap
+sudo systemctl disable rpcbind
+sudo systemctl disable rpcbind.socket
+sudo systemctl disable rpcbind.socket
+sudo systemctl disable rsync
+sudo systemctl disable setserial
+sudo systemctl disable ssh
+sudo systemctl disable sysstat
+sudo systemctl disable smartmontools
+sudo systemctl disable teamviewerd
+sudo systemctl disable vboxweb
+sudo systemctl disable virtualbox-guest-utils
+sudo systemctl disable zfs-fuse
+
+rm -f /usr/share/applications/anydesk.desktop
+rm -f /usr/share/applications/balena-etcher-electron.desktop
+rm -f /usr/share/applications/bat.desktop
+rm -f /usr/share/applications/bleachbit-root.desktop
+rm -f /usr/share/applications/clamtk.desktop
+rm -f /usr/share/applications/clamtk-kde.desktop
+rm -f /usr/share/applications/clusterssh.desktop
+rm -f /usr/share/applications/codium.desktop
+rm -f /usr/share/applications/codium-url-handler.desktop
+rm -f /usr/share/applications/com.teamviewer.TeamViewer.desktop
+rm -f /usr/share/applications/debian-uxterm.desktop
+rm -f /usr/share/applications/debian-xterm.desktop
+rm -f /usr/share/applications/ddrescue-gui.desktop
+rm -f /usr/share/applications/ddrescueview.desktop
+rm -f /usr/share/applications/designer-qt5.desktop
+rm -f /usr/share/applications/driftnet.desktop
+rm -f /usr/share/applications/ettercap.desktop
+rm -f /usr/share/applications/etherape.desktop
+rm -f /usr/share/applications/filezilla.desktop
+rm -f /usr/share/applications/gftp.desktop
+rm -f /usr/share/applications/gksu.desktop
+rm -f /usr/share/applications/gparted.desktop
+rm -f /usr/share/applications/grdesktop.desktop
+rm -f /usr/share/applications/grsync.desktop
+rm -f /usr/share/applications/gsmartcontrol.desktop
+rm -f /usr/share/applications/gtkhash.desktop
+rm -f /usr/share/applications/guymager.desktop
+rm -f /usr/share/applications/hardinfo.desktop
+rm -f /usr/share/applications/htop.desktop
+rm -f /usr/share/applications/hydra-gtk.desktop
+rm -f /usr/share/applications/jmeter.desktop
+rm -f /usr/share/applications/kismet.desktop
+rm -f /usr/share/applications/lftp.desktop
+rm -f /usr/share/applications/linguist-qt5.desktop
+rm -f /usr/share/applications/lshw-gtk.desktop
+rm -f /usr/share/applications/lstopo.desktop
+rm -f /usr/share/applications/mate-disk-usage-analyzer.desktop
+rm -f /usr/share/applications/mc.desktop
+rm -f /usr/share/applications/mcedit.desktop
+rm -f /usr/share/applications/mutt.desktop
+rm -f /usr/share/applications/minicom.desktop
+rm -f /usr/share/applications/ophcrack.desktop
+rm -f /usr/share/applications/org.bleachbit.BleachBit.desktop
+rm -f /usr/share/applications/org.gnome.baobab.desktop
+rm -f /usr/share/applications/org.keepassxc.KeePassXC.desktop
+rm -f /usr/share/applications/org.remmina.Remmina.desktop
+rm -f /usr/share/applications/packeth.desktop
+rm -f /usr/share/applications/psensor.desktop
+rm -f /usr/share/applications/qtop.desktop
+rm -f /usr/share/applications/R.desktop
+rm -f /usr/share/applications/remmina-file.desktop
+rm -f /usr/share/applications/remmina-gnome.desktop
+rm -f /usr/share/applications/terminator.desktop
+rm -f /usr/share/applications/unetbootin.desktop
+rm -f /usr/share/applications/virtualbox.desktop
+rm -f /usr/share/applications/wireshark.desktop
+rm -f /usr/share/applications/xca.desktop
+rm -f /usr/share/applications/zulucrypt-gui.desktop
+rm -f /usr/share/applications/zulumount-gui.desktop

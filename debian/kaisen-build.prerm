@@ -1,8 +1,0 @@
-#!/bin/bash
-
-set -e
-
-cd /root/kaisen-build
-rm -rf config/*
-lb clean
-rm -rf cache .build
