@@ -1,4 +1,5 @@
 ##Kaisen XFCE environment (kaisen-xfce metapackage install GDM3 and GNOME desktop, WTF ?????)
+xfce4
 xfce4-panel
 xfce4-power-manager
 xfce4-power-manager-data
@@ -12,12 +13,24 @@ lightdm
 lightdm-gtk-greeter
 network-manager
 network-manager-gnome
-kaisen-firefox
+firefox
+firefox-l10n-fr
+firefox-l10n-es-es
+firefox-l10n-pt-pt
+firefox-l10n-it
+firefox-l10n-de
 sudo
 gksu
-kaisen-xfce-design
-kaisen-xfce-default-profile
 kaisen-menu
+plymouth
+xcursor-themes
+terminator
+xfce4-terminal
+vim
+zsh
+kaisen-skeleton
+locales-all
+fonts-cantarell
 
 ##Metapackages tools
 kaisen-technicians-tools
