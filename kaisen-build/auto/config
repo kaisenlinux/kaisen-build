@@ -5,6 +5,7 @@
 set -e
 
 cp -rfTL variant/$variant config
+cp -rf common/* config
 
 lb config noauto \
 --apt "apt" \
