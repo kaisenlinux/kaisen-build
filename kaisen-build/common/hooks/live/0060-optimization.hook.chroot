@@ -9,6 +9,7 @@ sudo systemctl disable avahi-daemon.socket
 sudo systemctl disable bacula-fd
 sudo systemctl disable bacula-sd
 sudo systemctl disable clamav-daemon
+sudo systemctl disable bettercap
 sudo systemctl disable blueman-mechanism
 sudo systemctl disable bluetooth
 sudo systemctl disable ceph-fuse.target
@@ -40,7 +41,6 @@ sudo systemctl disable open-vm-tools
 sudo systemctl disable openvpn
 sudo systemctl disable portmap
 sudo systemctl disable rpcbind
-sudo systemctl disable rpcbind.socket
 sudo systemctl disable rpcbind.socket
 sudo systemctl disable rsync
 sudo systemctl disable setserial
