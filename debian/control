@@ -1,7 +1,7 @@
 Source: kaisen-build
 Priority: optional
 Section: kaisen-packages
-Standards-Version: 4.4.0
+Standards-Version: 4.5.0
 Build-Depends: debhelper
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
