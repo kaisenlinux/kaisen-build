@@ -2,5 +2,10 @@
 
 set -e
 
+if [ "$1" = "configure" ]; then
 awk -F: -v v="/home" '{if ($6~v) if ( -d $6 ) print "cp -rf /usr/share/kaisen-build "$6" && chown "$1" "$6" -R" fi fi }' /etc/passwd | zsh
+fi
+
+#DEBHELPER
+
 rm -rf /usr/share/kaisen-build

@@ -1,0 +1,13 @@
+How to build my custom ISO?
+
+For build your custom ISO, go on variant/CUSTOM folder.
+
+Read Debian documentation for live-build:
+
+https://live-team.pages.debian.net/live-manual/html/live-manual/index.en.html
+
+Create your config and run "sudo lb build" command.
+
+I create variant/CUSTOM/auto/config file to use Kaisen Linux settings and repositories. Don't touch :-)
+
+Enjoy !

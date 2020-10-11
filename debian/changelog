@@ -1,3 +1,16 @@
+kaisen-build (1.4+kaisen1) kaisen-packages; urgency=medium
+
+  * Use priority graphical installer
+  * Update hook
+  * Move install.bat on common folder
+  * Move install and live.list.chroot on common folder
+  * Move autorun.inf on common folder
+  * Add purge parameter on postrm script (preserve user modifications)
+  * Add CUSTOM variant for user custom ISO
+  * Create README-FIRST file for custom build
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 11 Aug 2020 22:05:13 +0200
+
 kaisen-build (1.4) kaisen-rolling; urgency=medium
 
   * Update configurations for Rolling 1.4 revision

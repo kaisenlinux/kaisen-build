@@ -21,15 +21,26 @@ sudo systemctl disable docker.socket
 sudo systemctl disable e2scrub_all.timer
 sudo systemctl disable e2scrub_reap
 sudo systemctl disable etc-setserial
+sudo systemctl disable gns3-server
 sudo systemctl disable hostapd
 sudo systemctl disable ip6tables
 sudo systemctl disable iptables
 sudo systemctl disable irqbalance
+sudo systemctl disable libvirtd.service
+sudo systemctl disable virtlockd.socket
+sudo systemctl disable virtlogd.socket
+sudo systemctl disable libvirtd.socket
+sudo systemctl disable libvirtd-ro.socket
+sudo systemctl disable libvirt-guests.service
+sudo systemctl disable libvirtd-admin.socket
+sudo systemctl disable virtlockd-admin.socket
+sudo systemctl disable virtlogd-admin.socket
 sudo systemctl disable lm-sensors
 sudo systemctl disable lockdown
 sudo systemctl disable lxcfs
 sudo systemctl disable lxc-net
 sudo systemctl disable lxc
+sudo systemctl disable neo4j
 sudo systemctl disable netfilter-persistent
 sudo systemctl disable nfs-client.target
 sudo systemctl disable nfs-kernel-server
@@ -101,6 +112,7 @@ rm -f /usr/share/applications/org.gnome.baobab.desktop || true
 rm -f /usr/share/applications/org.keepassxc.KeePassXC.desktop || true
 rm -f /usr/share/applications/org.remmina.Remmina.desktop || true
 rm -f /usr/share/applications/packeth.desktop || true
+rm -f /usr/share/applications/packetsender.desktop || true
 rm -f /usr/share/applications/psensor.desktop || true
 rm -f /usr/share/applications/qtop.desktop || true
 rm -f /usr/share/applications/R.desktop || true

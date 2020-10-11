@@ -7,10 +7,12 @@ Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 Rules-Requires-Root: no
 Homepage: https://kaisen-linux.org/
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/kaisen-build.git
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/kaisen-build
 
 Package: kaisen-build
 Architecture: amd64
-Priority: standard
+Priority: optional
 Depends: live-build (>=1:20191221+kaisen1),
 	 live-boot,
 	 live-manual,
