@@ -1,3 +1,11 @@
+kaisen-build (1.4+kaisen4) kaisen-packages; urgency=medium
+
+  * Add keepass2 launcher on hook script
+  * Remove CUSTOM folder
+  * Add SR (SystemRescue folder) for LXDE live only
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 18 Oct 2020 19:36:11 +0200
+
 kaisen-build (1.4+kaisen3) kaisen-packages; urgency=medium
 
   * Add virt-manager launcher on hook script
