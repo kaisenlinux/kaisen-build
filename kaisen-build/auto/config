@@ -4,8 +4,28 @@
 
 set -e
 
+params=""
+
 cp -rfTL variant/$variant config
 cp -rf common/* config
+
+case $variant in
+        KDE|LXDE|MATE|XFCE)
+	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true"
+        ;;
+        SR)
+	params="$params --debian-installer false"
+        ;;
+esac
+
+case $variant in
+        KDE|LXDE|MATE|XFCE)
+	params="$params --iso-application Kaisen Linux Rolling $variant $version --iso-volume Kaisen Linux Rolling $variant $version"
+        ;;
+        SR)
+	params="$params --iso-application Kaisen Linux SystemRescue --iso-volume Kaisen Linux SystemRescue"
+	;;
+esac
 
 lb config noauto \
 --apt "apt" \
@@ -24,9 +44,6 @@ lb config noauto \
 --cache-stages "bootstrap" \
 --checksums "sha256" \
 --clean \
---debian-installer "live" \
---debian-installer-distribution "kaisen-rolling" \
---debian-installer-gui "true" \
 --distribution "kaisen-rolling" \
 --distribution-binary "kaisen-rolling" \
 --distribution-chroot "kaisen-rolling" \
@@ -35,10 +52,8 @@ lb config noauto \
 --linux-flavours "amd64" \
 --linux-packages "linux-image" \
 --loadlin "true" \
---iso-application "Kaisen Linux Rolling $variant $version" \
 --iso-preparer "Kevin Chevreuil - Kaisen" \
 --iso-publisher "Kevin Chevreuil - Kaisen" \
---iso-volume "Kaisen Linux Rolling $variant $version" \
 --keyring-package "kaisen-archive-keyring" \
 --memtest "memtest86+" \
 --security "false" \
@@ -58,3 +73,4 @@ lb config noauto \
 --mirror-binary "https://kaisendeb.lf.je/kaisen" \
 --mirror-debian-installer "https://kaisendeb.lf.je/kaisen" \
 --parent-archive-areas "main contrib non-free" \
+$params \

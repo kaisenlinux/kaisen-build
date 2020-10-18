@@ -1,3 +1,11 @@
+kaisen-build (1.4+kaisen5) kaisen-packages; urgency=medium
+
+  * Update auto/config script for SR variant
+  * Readding CUSTOM folder with default parameters
+  * Build CUSTOM variant with ./kaisen-build script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 18 Oct 2020 22:22:24 +0200
+
 kaisen-build (1.4+kaisen4) kaisen-packages; urgency=medium
 
   * Add keepass2 launcher on hook script

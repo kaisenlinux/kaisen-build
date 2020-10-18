@@ -29,13 +29,23 @@ EXPLAINATION
       version - select your version number
 
 EXAMPLE
- 	 sudo ./kaisen-build build MATE 1.2
+ 	 sudo ./kaisen-build build CUSTOM 1.0
+      or sudo ./kaisen-build build CUSTOM
 "
 }
 
 function kaisen-build() {
 	lb build
+	case $variant in
+		KDE|LXDE|MATE|XFCE)
 	mv live-image-amd64.hybrid.iso ../kaisenlinuxrolling$version-amd64-$variant.iso
+	;;
+	esac
+	case $variant in
+		SR)
+	mv live-image-amd64.hybrid.iso ../kaisenlinux$version-amd64.iso
+	;;
+	esac
 	lb clean
 	rm -rf cache config .build || true
 }
