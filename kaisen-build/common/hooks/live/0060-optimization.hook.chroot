@@ -121,6 +121,7 @@ rm -f /usr/share/applications/remmina-gnome.desktop || true
 rm -f /usr/share/applications/terminator.desktop || true
 rm -f /usr/share/applications/timeshift-gtk.desktop || true
 rm -f /usr/share/applications/unetbootin.desktop || true
+rm -f /usr/share/applications/virt-manager.desktop || true
 rm -f /usr/share/applications/virtualbox.desktop || true
 rm -f /usr/share/applications/wireshark.desktop || true
 rm -f /usr/share/applications/xca.desktop || true

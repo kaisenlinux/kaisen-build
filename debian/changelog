@@ -1,8 +1,14 @@
+kaisen-build (1.4+kaisen3) kaisen-packages; urgency=medium
+
+  * Add virt-manager launcher on hook script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 18 Oct 2020 02:16:28 +0200
+
 kaisen-build (1.4+kaisen2) kaisen-packages; urgency=medium
 
   * Fix XFCE packages list
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Tue, 13 Aug 2020 23:32:07 +0200
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Tue, 13 Oct 2020 23:32:07 +0200
 
 kaisen-build (1.4+kaisen1) kaisen-packages; urgency=medium
 
@@ -15,7 +21,7 @@ kaisen-build (1.4+kaisen1) kaisen-packages; urgency=medium
   * Add CUSTOM variant for user custom ISO
   * Create README-FIRST file for custom build
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 11 Aug 2020 22:05:13 +0200
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 11 Oct 2020 22:05:13 +0200
 
 kaisen-build (1.4) kaisen-rolling; urgency=medium
 
