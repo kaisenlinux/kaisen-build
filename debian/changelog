@@ -1,3 +1,9 @@
+kaisen-build (1.4+kaisen7) kaisen-packages; urgency=medium
+
+  * Update postrm script (change purge actions)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Mon, 19 Oct 2020 01:31:32 +0200
+
 kaisen-build (1.4+kaisen6) kaisen-packages; urgency=medium
 
   * Fix SR ISO build bug (folder common/includes.binary deleted)

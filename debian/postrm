@@ -3,7 +3,7 @@
 set -e
 
 case "$1" in
-	upgrade|full-upgrade|remove|autoremove|purge|downgrade)
+	upgrade|full-upgrade|remove|autoremove|downgrade)
     find /home/*/kaisen-build/auto -delete > /dev/null 2>&1 || true
     find /home/*/kaisen-build/common -delete > /dev/null 2>&1 || true
     find /home/*/kaisen-build/variant/KDE -delete > /dev/null 2>&1 || true
@@ -11,6 +11,12 @@ case "$1" in
     find /home/*/kaisen-build/variant/MATE -delete > /dev/null 2>&1 || true
     find /home/*/kaisen-build/variant/XFCE -delete > /dev/null 2>&1 || true
     find /home/*/kaisen-build/variant/SR -delete > /dev/null 2>&1 || true
+    find /home/*/kaisen-build/kaisen-build -delete > /dev/null 2>&1 || true
+;;
+esac
+case "$1" in
+	purge)
+	find /home/*/kaisen-build -delete > /dev/null 2>&1 || true
 ;;
 esac
 
