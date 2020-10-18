@@ -1,3 +1,15 @@
+kaisen-build (1.4+kaisen6) kaisen-packages; urgency=medium
+
+  * Fix SR ISO build bug (folder common/includes.binary deleted)
+  * Remove kaisen-calamares-settings on packages-lists
+  * Update postrm script (applying modifications on officials ISO folders,
+    conserves settings and confs on CUSTOM folder for users ISO).
+  * Change LXDE by MATE on SR
+  * Update ISO menus on SR
+  * Update kaisen-build script (ISO names)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Mon, 19 Oct 2020 01:19:36 +0200
+
 kaisen-build (1.4+kaisen5) kaisen-packages; urgency=medium
 
   * Update auto/config script for SR variant

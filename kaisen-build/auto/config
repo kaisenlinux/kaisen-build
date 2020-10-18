@@ -11,20 +11,13 @@ cp -rf common/* config
 
 case $variant in
         KDE|LXDE|MATE|XFCE)
-	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true"
+	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-application Kaisen Linux Rolling $variant $version --iso-volume Kaisen Linux Rolling $variant $version --iso-preparer Kevin Chevreuil - Kaisen --iso-publisher Kevin Chevreuil - Kaisen --loadlin true --win32-loader true"
         ;;
         SR)
-	params="$params --debian-installer false"
+	params="$params --debian-installer false --iso-application Kaisen Linux SystemRescue --iso-volume Kaisen Linux SystemRescue --iso-preparer Kevin Chevreuil - Kaisen --iso-publisher Kevin Chevreuil - Kaisen"
         ;;
-esac
-
-case $variant in
-        KDE|LXDE|MATE|XFCE)
-	params="$params --iso-application Kaisen Linux Rolling $variant $version --iso-volume Kaisen Linux Rolling $variant $version"
-        ;;
-        SR)
-	params="$params --iso-application Kaisen Linux SystemRescue --iso-volume Kaisen Linux SystemRescue"
-	;;
+	CUSTOM)
+	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-application Kaisen Linux CUSTOM $version --iso-volume Kaisen Linux CUSTOM $version --loadlin true --win32-loader true"
 esac
 
 lb config noauto \
@@ -51,9 +44,6 @@ lb config noauto \
 --firmware-chroot "true" \
 --linux-flavours "amd64" \
 --linux-packages "linux-image" \
---loadlin "true" \
---iso-preparer "Kevin Chevreuil - Kaisen" \
---iso-publisher "Kevin Chevreuil - Kaisen" \
 --keyring-package "kaisen-archive-keyring" \
 --memtest "memtest86+" \
 --security "false" \
@@ -63,7 +53,6 @@ lb config noauto \
 --backports "false" \
 --updates "false" \
 --verbose \
---win32-loader "true" \
 --parent-mirror-bootstrap "https://kaisendeb.lf.je/kaisen" \
 --parent-mirror-chroot "https://kaisendeb.lf.je/kaisen" \
 --parent-mirror-binary "https://kaisendeb.lf.je/kaisen" \

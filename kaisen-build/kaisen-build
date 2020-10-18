@@ -43,9 +43,14 @@ function kaisen-build() {
 	esac
 	case $variant in
 		SR)
-	mv live-image-amd64.hybrid.iso ../kaisenlinux$version-amd64.iso
+	mv live-image-amd64.hybrid.iso ../kaisenlinux$version-amd64-SR.iso
 	;;
 	esac
+	case $variant in
+                CUSTOM)
+        mv live-image-amd64.hybrid.iso ../kaisenlinuxCUSTOM-amd64-$version.iso
+        ;;
+        esac
 	lb clean
 	rm -rf cache config .build || true
 }
