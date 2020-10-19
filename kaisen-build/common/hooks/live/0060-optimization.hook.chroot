@@ -114,8 +114,10 @@ rm -f /usr/share/applications/org.remmina.Remmina.desktop || true
 rm -f /usr/share/applications/packeth.desktop || true
 rm -f /usr/share/applications/packetsender.desktop || true
 rm -f /usr/share/applications/psensor.desktop || true
+rm -f /usr/share/applications/qemu.desktop || true
 rm -f /usr/share/applications/qtop.desktop || true
 rm -f /usr/share/applications/R.desktop || true
+rm -f /usr/share/applications/remote-viewer.desktop || true
 rm -f /usr/share/applications/remmina-file.desktop || true
 rm -f /usr/share/applications/remmina-gnome.desktop || true
 rm -f /usr/share/applications/terminator.desktop || true
