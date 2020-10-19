@@ -1,3 +1,9 @@
+kaisen-build (1.4+kaisen8) kaisen-packages; urgency=medium
+
+  * Remove keepass2 launcher on hook script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Mon, 19 Oct 2020 21:14:58 +0200
+
 kaisen-build (1.4+kaisen7) kaisen-packages; urgency=medium
 
   * Update postrm script (change purge actions)

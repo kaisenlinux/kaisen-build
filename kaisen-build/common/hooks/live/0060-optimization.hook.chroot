@@ -96,7 +96,6 @@ rm -f /usr/share/applications/hardinfo.desktop || true
 rm -f /usr/share/applications/htop.desktop || true
 rm -f /usr/share/applications/hydra-gtk.desktop || true
 rm -f /usr/share/applications/jmeter.desktop || true
-rm -f /usr/share/applications/keepass2.desktop || true
 rm -f /usr/share/applications/kismet.desktop || true
 rm -f /usr/share/applications/lftp.desktop || true
 rm -f /usr/share/applications/linguist-qt5.desktop || true
