@@ -11,13 +11,13 @@ cp -rf common/* config
 
 case $variant in
         KDE|LXDE|MATE|XFCE)
-	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-application Kaisen Linux Rolling $variant $version --iso-volume Kaisen Linux Rolling $variant $version --iso-preparer Kevin Chevreuil - Kaisen --iso-publisher Kevin Chevreuil - Kaisen --loadlin true --win32-loader true"
+	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-application "Kaisen Linux Rolling $variant $version" --iso-volume "Kaisen Linux Rolling $variant $version" --iso-preparer "Kevin Chevreuil - Kaisen" --iso-publisher "Kevin Chevreuil - Kaisen" --loadlin true --win32-loader true"
         ;;
         SR)
-	params="$params --debian-installer false --iso-application Kaisen Linux SystemRescue --iso-volume Kaisen Linux SystemRescue --iso-preparer Kevin Chevreuil - Kaisen --iso-publisher Kevin Chevreuil - Kaisen"
+	params="$params --debian-installer false --iso-application "Kaisen Linux System Rescue $version" --iso-volume "Kaisen Linux System Rescue $version" --iso-preparer "Kevin Chevreuil - Kaisen" --iso-publisher "Kevin Chevreuil - Kaisen""
         ;;
 	CUSTOM)
-	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-application Kaisen Linux CUSTOM $version --iso-volume Kaisen Linux CUSTOM $version --loadlin true --win32-loader true"
+	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-application "Kaisen Linux CUSTOM $version" --iso-volume "Kaisen Linux CUSTOM $version" --loadlin true --win32-loader true"
 esac
 
 lb config noauto \

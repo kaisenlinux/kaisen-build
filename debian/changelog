@@ -1,3 +1,9 @@
+kaisen-build (1.4+kaisen10) kaisen-packages; urgency=medium
+
+  * Fix $params on kaisen-build/auto/config (add "" for escape)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Fri, 23 Oct 2020 21:08:09 +0200
+
 kaisen-build (1.4+kaisen9) kaisen-packages; urgency=medium
 
   * Update hook script
