@@ -1,3 +1,9 @@
+kaisen-build (1.4+kaisen11) kaisen-packages; urgency=medium
+
+  * Fix typo on kaisen-build/auto/config script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 25 Oct 2020 02:37:06 +0200
+
 kaisen-build (1.4+kaisen10) kaisen-packages; urgency=medium
 
   * Fix $params on kaisen-build/auto/config (add "" for escape)
