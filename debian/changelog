@@ -1,3 +1,12 @@
+kaisen-build (1.4+kaisen12) kaisen-packages; urgency=medium
+
+  * Fix bugs and optimization:
+    - Bad ISO volumes and publisher
+    - Remove includes.installer on kaisen-build/common/ (adding on $variant)
+    - Remove symlinks on kaisen-build/hooks/live and kaisen-build/hooks/normal
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Wed, 28 Oct 2020 22:09:41 +0200
+
 kaisen-build (1.4+kaisen11) kaisen-packages; urgency=medium
 
   * Fix typo on kaisen-build/auto/config script

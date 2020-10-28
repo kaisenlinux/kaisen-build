@@ -1,4 +1,4 @@
-#Améliorer la vitesse d'installation 
+#Réduire l'espace occupé par le système sur le disque dur
 eatmydata
 #Assurer le support de GRUB pour UEFI ainsi que la bonne configuration de GRUB 
 grub-efi
