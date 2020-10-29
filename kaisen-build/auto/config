@@ -11,13 +11,13 @@ cp -rf common/* config
 
 case $variant in
         KDE|LXDE|MATE|XFCE)
-	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-application ""Kaisen Linux Rolling $variant $version"" --iso-volume ""Kaisen Linux Rolling $variant $version"" --iso-preparer ""Kevin Chevreuil - Kaisen"" --iso-publisher ""Kevin Chevreuil - Kaisen"" --loadlin true --win32-loader true --system live"
+	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Kaisen --iso-publisher Kaisen --loadlin true --win32-loader true --system live"
         ;;
         SR)
-	params="$params --debian-installer false --iso-application ""Kaisen Linux System Rescue $version"" --iso-volume ""Kaisen Linux System Rescue $version"" --iso-preparer ""Kevin Chevreuil - Kaisen"" --iso-publisher ""Kevin Chevreuil - Kaisen --system live"
+	params="$params --debian-installer false --iso-preparer Kaisen --iso-publisher Kaisen --system live"
         ;;
 	CUSTOM)
-	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-application ""Kaisen Linux CUSTOM $version"" --iso-volume ""Kaisen Linux CUSTOM $version"" --loadlin true --win32-loader true --system live"
+	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --loadlin true --win32-loader true --system live"
 esac
 
 lb config noauto \
@@ -42,6 +42,8 @@ lb config noauto \
 --distribution-chroot "kaisen-rolling" \
 --firmware-binary "true" \
 --firmware-chroot "true" \
+--iso-application "Kaisen Linux Rolling $variant $version" \
+--iso-volume "Kaisen Linux Rolling $variant $version" \
 --linux-flavours "amd64" \
 --linux-packages "linux-image" \
 --keyring-package "kaisen-archive-keyring" \
