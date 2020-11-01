@@ -2,6 +2,8 @@
 
 set -e
 
+#Disable additionals services for reduce used RAM
+
 sudo systemctl disable anydesk
 sudo systemctl disable arpwatch
 sudo systemctl disable avahi-daemon
@@ -62,6 +64,8 @@ sudo systemctl disable teamviewerd
 sudo systemctl disable vboxweb
 sudo systemctl disable virtualbox-guest-utils
 sudo systemctl disable zfs-fuse
+
+#Remove launchers on user applications menu because replaces by launchers on Kaisen Linux menu
 
 rm -f /usr/share/applications/anydesk.desktop || true
 rm -f /usr/share/applications/balena-etcher-electron.desktop || true
@@ -130,3 +134,16 @@ rm -f /usr/share/applications/xca.desktop || true
 rm -f /usr/share/applications/xsensors.desktop || true
 rm -f /usr/share/applications/zulucrypt-gui.desktop || true
 rm -f /usr/share/applications/zulumount-gui.desktop || true
+
+#Hold Linux for fix broken usb persistence key after Linux upgrade
+
+for kernel in $(dpkg-query -W -f'${binary:Package}\n' 'linux-image-*' 'linux-headers-*' 'linux-kbuild-*')
+do
+    apt-mark hold $kernel
+done
+
+#Launch updatedb command for mlocate
+
+if [ -x "$(which updatedb 2>/dev/null)" ]; then
+    updatedb
+fi
