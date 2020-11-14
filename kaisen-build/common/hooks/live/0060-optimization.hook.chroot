@@ -137,7 +137,7 @@ rm -f /usr/share/applications/zulumount-gui.desktop || true
 
 #Hold Linux for fix broken usb persistence key after Linux upgrade
 
-for kernel in $(dpkg-query -W -f'${binary:Package}\n' 'linux-image-amd64' 'linux-image-*-amd64' 'linux-headers-amd64' 'linux-headers-*-amd64' 'linux-kbuild-*-amd64')
+for kernel in $(dpkg-query -W -f'${binary:Package}\n' 'linux-image-amd64' 'linux-image-*-amd64' 'linux-headers-amd64' 'linux-headers-*-amd64' 'linux-kbuild-*-amd64' 'linux-kbuild-*' 'linux-libc-dev' 'linux-compiler-gcc-10-x86')
 do
     apt-mark hold $kernel
 done
