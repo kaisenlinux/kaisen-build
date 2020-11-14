@@ -1,5 +1,0 @@
-#!/bin/bash
-
-set -e
-
-in-target sh -c 'apt-mark showhold | while read kernel; do apt-mark unhold $kernel; done'
