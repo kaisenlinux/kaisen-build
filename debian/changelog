@@ -1,3 +1,9 @@
+kaisen-build (1.4+kaisen19) kaisen-packages; urgency=medium
+
+  * Add libcpupower1 package in hold package 
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 15 Nov 2020 13:55:39 +0200
+
 kaisen-build (1.4+kaisen18) kaisen-packages; urgency=medium
 
   * Update hook script (hold Linux)
