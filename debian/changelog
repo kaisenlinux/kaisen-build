@@ -1,3 +1,9 @@
+kaisen-build (1.4+kaisen20) kaisen-packages; urgency=medium
+
+  * Add teamviewerapi launcher on hook script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Fri, 27 Nov 2020 22:18:14 +0200
+
 kaisen-build (1.4+kaisen19) kaisen-packages; urgency=medium
 
   * Add libcpupower1 package in hold package 
