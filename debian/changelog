@@ -1,3 +1,9 @@
+kaisen-build (1.4+kaisen21) kaisen-packages; urgency=medium
+
+  * Copying common/* before variant/$variant in config folder
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Wed, 02 Dec 2020 23:07:36 +0200
+
 kaisen-build (1.4+kaisen20) kaisen-packages; urgency=medium
 
   * Add teamviewerapi launcher on hook script

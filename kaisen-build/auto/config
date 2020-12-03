@@ -6,8 +6,8 @@ set -e
 
 params=""
 
+cp -rfTL common/* config
 cp -rfTL variant/$variant config
-cp -rf common/* config
 
 case $variant in
         KDE|LXDE|MATE|XFCE)
