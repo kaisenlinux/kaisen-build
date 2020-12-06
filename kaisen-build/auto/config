@@ -6,7 +6,8 @@ set -e
 
 params=""
 
-cp -rfTL common/* config
+mkdir config || true
+cp -rf common/* config
 cp -rfTL variant/$variant config
 
 case $variant in
