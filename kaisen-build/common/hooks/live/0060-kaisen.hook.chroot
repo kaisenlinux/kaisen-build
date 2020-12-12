@@ -4,29 +4,35 @@ set -e
 
 #Disable additionals services to reduce used RAM
 
+sudo systemctl disable 2ping
 sudo systemctl disable anydesk
+sudo systemctl disable arpalert
 sudo systemctl disable arpwatch
 sudo systemctl disable avahi-daemon
-sudo systemctl disable avahi-daemon.socket
 sudo systemctl disable bacula-fd
 sudo systemctl disable bacula-sd
-sudo systemctl disable clamav-daemon
 sudo systemctl disable bettercap
-sudo systemctl disable blueman-mechanism
 sudo systemctl disable bluetooth
+sudo systemctl disable blueman-mechanism
 sudo systemctl disable ceph-fuse.target
+sudo systemctl disable clamav-daemon
 sudo systemctl disable clamav-freshclam
+sudo systemctl disable clamav-milter
 sudo systemctl disable cups-browsed
 sudo systemctl disable cups
+sudo systemctl disable cups.path
+sudo systemctl disable cups.socket
 sudo systemctl disable docker
 sudo systemctl disable docker.socket
-sudo systemctl disable e2scrub_all.timer
 sudo systemctl disable e2scrub_reap
+sudo systemctl disable e2scrub_all.timer
 sudo systemctl disable etc-setserial
-sudo systemctl disable gns3-server
-sudo systemctl disable hostapd
-sudo systemctl disable ip6tables
 sudo systemctl disable iptables
+sudo systemctl disable ip6tables
+sudo systemctl disable netfilter-persistent
+sudo systemctl disable gns3-server
+sudo systemctl disable hddtemp
+sudo systemctl disable hostapd
 sudo systemctl disable irqbalance
 sudo systemctl disable libvirtd.service
 sudo systemctl disable virtlockd.socket
@@ -43,26 +49,28 @@ sudo systemctl disable lxcfs
 sudo systemctl disable lxc-net
 sudo systemctl disable lxc
 sudo systemctl disable neo4j
-sudo systemctl disable netfilter-persistent
 sudo systemctl disable nfs-client.target
 sudo systemctl disable nfs-kernel-server
 sudo systemctl disable nfs-server
+sudo systemctl disable portmap
+sudo systemctl disable rpcbind
+sudo systemctl disable rpcbind.socket
 sudo systemctl disable ntp
 sudo systemctl disable o2cb
 sudo systemctl disable ocfs2
-sudo systemctl disable open-vm-tools
 sudo systemctl disable openvpn
-sudo systemctl disable portmap
 sudo systemctl disable rpcbind
 sudo systemctl disable rpcbind.socket
 sudo systemctl disable rsync
 sudo systemctl disable setserial
+sudo systemctl disable smartmontools
 sudo systemctl disable ssh
 sudo systemctl disable sysstat
-sudo systemctl disable smartmontools
 sudo systemctl disable teamviewerd
 sudo systemctl disable vboxweb
+sudo systemctl disable virtualbox
 sudo systemctl disable virtualbox-guest-utils
+sudo systemctl disable open-vm-tools
 sudo systemctl disable zfs-fuse
 
 #Remove launchers on user applications menu because replaces by launchers on Kaisen Linux menu
