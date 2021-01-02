@@ -150,13 +150,13 @@ rm -f /usr/share/applications/zulumount-gui.desktop || true
 
 for kernel in $(dpkg --get-selections | grep '^linux-compiler' | awk '{ print $1 }' && dpkg --get-selections | grep '^linux-headers' | awk '{ print $1 }' && dpkg --get-selections | grep '^linux-image' | awk '{ print $1 }' && dpkg --get-selections | grep '^linux-kbuild' | awk '{ print $1 }' && dpkg --get-selections | grep '^linux-libc' | awk '{ print $1 }' && dpkg --get-selections | grep '^libcpupower1' | awk '{ print $1 }')
 do
-apt-mark hold $kernel
+	apt-mark hold $kernel
 done
 
 #Launch updatedb command for mlocate
 
 if [ -x "$(which updatedb 2>/dev/null)" ]; then
-updatedb
+	updatedb
 fi
 
 #Remove exim
