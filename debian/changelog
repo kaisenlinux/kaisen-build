@@ -1,3 +1,11 @@
+kaisen-build (1.5+kaisen1) kaisen-packages; urgency=medium
+
+  * Change menus ISO version 1.5 to 1.6
+  * Add KDE hook to disable kdeconnect
+  * Add exim remove to common/hooks/live/
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 02 Jan 2021 20:10:31 +0200
+
 kaisen-build (1.5) kaisen-packages; urgency=medium
 
   * Update version to 1.5

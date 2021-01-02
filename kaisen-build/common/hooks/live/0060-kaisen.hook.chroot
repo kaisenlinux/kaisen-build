@@ -4,74 +4,74 @@ set -e
 
 #Disable additionals services to reduce used RAM
 
-sudo systemctl disable 2ping
-sudo systemctl disable anydesk
-sudo systemctl disable arpalert
-sudo systemctl disable arpwatch
-sudo systemctl disable avahi-daemon
-sudo systemctl disable bacula-fd
-sudo systemctl disable bacula-sd
-sudo systemctl disable bettercap
-sudo systemctl disable bluetooth
-sudo systemctl disable blueman-mechanism
-sudo systemctl disable ceph-fuse.target
-sudo systemctl disable clamav-daemon
-sudo systemctl disable clamav-freshclam
-sudo systemctl disable clamav-milter
-sudo systemctl disable cups-browsed
-sudo systemctl disable cups
-sudo systemctl disable cups.path
-sudo systemctl disable cups.socket
-sudo systemctl disable docker
-sudo systemctl disable docker.socket
-sudo systemctl disable e2scrub_reap
-sudo systemctl disable e2scrub_all.timer
-sudo systemctl disable etc-setserial
-sudo systemctl disable iptables
-sudo systemctl disable ip6tables
-sudo systemctl disable netfilter-persistent
-sudo systemctl disable gns3-server
-sudo systemctl disable hddtemp
-sudo systemctl disable hostapd
-sudo systemctl disable irqbalance
-sudo systemctl disable libvirtd.service
-sudo systemctl disable virtlockd.socket
-sudo systemctl disable virtlogd.socket
-sudo systemctl disable libvirtd.socket
-sudo systemctl disable libvirtd-ro.socket
-sudo systemctl disable libvirt-guests.service
-sudo systemctl disable libvirtd-admin.socket
-sudo systemctl disable virtlockd-admin.socket
-sudo systemctl disable virtlogd-admin.socket
-sudo systemctl disable lm-sensors
-sudo systemctl disable lockdown
-sudo systemctl disable lxcfs
-sudo systemctl disable lxc-net
-sudo systemctl disable lxc
-sudo systemctl disable neo4j
-sudo systemctl disable nfs-client.target
-sudo systemctl disable nfs-kernel-server
-sudo systemctl disable nfs-server
-sudo systemctl disable portmap
-sudo systemctl disable rpcbind
-sudo systemctl disable rpcbind.socket
-sudo systemctl disable ntp
-sudo systemctl disable o2cb
-sudo systemctl disable ocfs2
-sudo systemctl disable openvpn
-sudo systemctl disable rpcbind
-sudo systemctl disable rpcbind.socket
-sudo systemctl disable rsync
-sudo systemctl disable setserial
-sudo systemctl disable smartmontools
-sudo systemctl disable ssh
-sudo systemctl disable sysstat
-sudo systemctl disable teamviewerd
-sudo systemctl disable vboxweb
-sudo systemctl disable virtualbox
-sudo systemctl disable virtualbox-guest-utils
-sudo systemctl disable open-vm-tools
-sudo systemctl disable zfs-fuse
+systemctl disable 2ping
+systemctl disable anydesk
+systemctl disable arpalert
+systemctl disable arpwatch
+systemctl disable avahi-daemon
+systemctl disable bacula-fd
+systemctl disable bacula-sd
+systemctl disable bettercap
+systemctl disable bluetooth
+systemctl disable blueman-mechanism
+systemctl disable ceph-fuse.target
+systemctl disable clamav-daemon
+systemctl disable clamav-freshclam
+systemctl disable clamav-milter
+systemctl disable cups-browsed
+systemctl disable cups
+systemctl disable cups.path
+systemctl disable cups.socket
+systemctl disable docker
+systemctl disable docker.socket
+systemctl disable e2scrub_reap
+systemctl disable e2scrub_all.timer
+systemctl disable etc-setserial
+systemctl disable iptables
+systemctl disable ip6tables
+systemctl disable netfilter-persistent
+systemctl disable gns3-server
+systemctl disable hddtemp
+systemctl disable hostapd
+systemctl disable irqbalance
+systemctl disable libvirtd.service
+systemctl disable virtlockd.socket
+systemctl disable virtlogd.socket
+systemctl disable libvirtd.socket
+systemctl disable libvirtd-ro.socket
+systemctl disable libvirt-guests.service
+systemctl disable libvirtd-admin.socket
+systemctl disable virtlockd-admin.socket
+systemctl disable virtlogd-admin.socket
+systemctl disable lm-sensors
+systemctl disable lockdown
+systemctl disable lxcfs
+systemctl disable lxc-net
+systemctl disable lxc
+systemctl disable neo4j
+systemctl disable nfs-client.target
+systemctl disable nfs-kernel-server
+systemctl disable nfs-server
+systemctl disable portmap
+systemctl disable rpcbind
+systemctl disable rpcbind.socket
+systemctl disable ntp
+systemctl disable o2cb
+systemctl disable ocfs2
+systemctl disable openvpn
+systemctl disable rpcbind
+systemctl disable rpcbind.socket
+systemctl disable rsync
+systemctl disable setserial
+systemctl disable smartmontools
+systemctl disable ssh
+systemctl disable sysstat
+systemctl disable teamviewerd
+systemctl disable vboxweb
+systemctl disable virtualbox
+systemctl disable virtualbox-guest-utils
+systemctl disable open-vm-tools
+systemctl disable zfs-fuse
 
 #Remove launchers on user applications menu because replaces by launchers on Kaisen Linux menu
 
@@ -118,6 +118,8 @@ rm -f /usr/share/applications/mc.desktop || true
 rm -f /usr/share/applications/mcedit.desktop || true
 rm -f /usr/share/applications/mutt.desktop || true
 rm -f /usr/share/applications/minicom.desktop || true
+rm -f /usr/share/applications/kde4/nmapsi4-admin.desktop || true
+rm -f /usr/share/applications/kde4/nmapsi4.desktop || true
 rm -f /usr/share/applications/ophcrack.desktop || true
 rm -f /usr/share/applications/org.bleachbit.BleachBit.desktop || true
 rm -f /usr/share/applications/org.gnome.baobab.desktop || true
@@ -148,11 +150,15 @@ rm -f /usr/share/applications/zulumount-gui.desktop || true
 
 for kernel in $(dpkg --get-selections | grep '^linux-compiler' | awk '{ print $1 }' && dpkg --get-selections | grep '^linux-headers' | awk '{ print $1 }' && dpkg --get-selections | grep '^linux-image' | awk '{ print $1 }' && dpkg --get-selections | grep '^linux-kbuild' | awk '{ print $1 }' && dpkg --get-selections | grep '^linux-libc' | awk '{ print $1 }' && dpkg --get-selections | grep '^libcpupower1' | awk '{ print $1 }')
 do
-    apt-mark hold $kernel
+apt-mark hold $kernel
 done
 
 #Launch updatedb command for mlocate
 
 if [ -x "$(which updatedb 2>/dev/null)" ]; then
-    updatedb
+updatedb
 fi
+
+#Remove exim
+
+apt-get autoremove --purge -y exim4-base
