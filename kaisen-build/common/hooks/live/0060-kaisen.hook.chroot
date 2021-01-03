@@ -18,6 +18,7 @@ systemctl disable ceph-fuse.target
 systemctl disable clamav-daemon
 systemctl disable clamav-freshclam
 systemctl disable clamav-milter
+systemctl disable containerd
 systemctl disable cups-browsed
 systemctl disable cups
 systemctl disable cups.path
