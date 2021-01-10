@@ -4,19 +4,19 @@ set -e
 
 case "$1" in
 	upgrade|full-upgrade|remove|autoremove|downgrade|abort-upgrade)
-    find /home/*/kaisen-build/auto -delete > /dev/null 2>&1 || true
-    find /home/*/kaisen-build/common -delete > /dev/null 2>&1 || true
-    find /home/*/kaisen-build/variant/KDE -delete > /dev/null 2>&1 || true
-    find /home/*/kaisen-build/variant/LXDE -delete > /dev/null 2>&1 || true
-    find /home/*/kaisen-build/variant/MATE -delete > /dev/null 2>&1 || true
-    find /home/*/kaisen-build/variant/XFCE -delete > /dev/null 2>&1 || true
-    find /home/*/kaisen-build/variant/SR -delete > /dev/null 2>&1 || true
-    find /home/*/kaisen-build/kaisen-build -delete > /dev/null 2>&1 || true
+    for users in $(awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd | cut -d: -f1)
+    do
+    find /home/$users/kaisen-build/{auto,common,variant/KDE,variant/LXDE,variant/MATE,variant/XFCE,variant/SR,kaisen-build} 2> /dev/null | xargs rm -rf
+    done
 ;;
 esac
 
 if [[ "$1" = "purge" ]]; then
-	find /home/*/kaisen-build -delete > /dev/null 2>&1 || true
+	for users in $(awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd | cut -d: -f1)
+	do
+	find /home/$users/kaisen-build | xargs rm -rf || true
+	rm -rf /usr/share/kaisen-build 2> /dev/null || true
+	done
 fi
 
 #DEBHELPER

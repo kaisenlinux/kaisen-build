@@ -3,9 +3,13 @@
 set -e
 
 if [[ "$1" = "configure" ]]; then
-awk -F: -v v="/home" '{if ($6~v) if ( -d $6 ) print "cp -rf /usr/share/kaisen-build "$6" && chown "$1" "$6" -R" fi fi }' /etc/passwd | zsh
+
+	for users in $(awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd | cut -d: -f1)
+	do
+		cp -rf /tmp/kaisen-build /home/$users/ && chown -R $users: /home/$users/kaisen-build || true
+		cp -rf /usr/share/kaisen-build/$users/CUSTOM /home/$users/kaisen-build/variant/ 2> /dev/null || true
+	done
+
 fi
 
 #DEBHELPER
-
-rm -rf /usr/share/kaisen-build
