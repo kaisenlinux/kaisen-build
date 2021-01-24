@@ -1,3 +1,9 @@
+kaisen-build (1.5+kaisen5) kaisen-packages; urgency=medium
+
+  * Remove .build folder in CUSTOM
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Mon, 25 Jan 2021 00:51:06 +0200
+
 kaisen-build (1.5+kaisen4) kaisen-packages; urgency=medium
 
   * Remove exim remove on hook script
