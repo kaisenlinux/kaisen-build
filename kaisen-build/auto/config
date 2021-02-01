@@ -15,7 +15,7 @@ case $variant in
 	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Kaisen --iso-publisher Kaisen --loadlin true --win32-loader true --system live"
         ;;
         SR)
-	params="$params --debian-installer false --iso-preparer Kaisen --iso-publisher Kaisen --system live"
+	params="$params --debian-installer none --iso-preparer Kaisen --iso-publisher Kaisen --system live"
         ;;
 	CUSTOM)
 	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --loadlin true --win32-loader true --system live"
@@ -26,14 +26,14 @@ lb config noauto \
 --apt-indices "true" \
 --apt-recommends "true" \
 --apt-secure "true" \
---architectures "amd64" \
+--architecture "amd64" \
 --archive-areas "main contrib non-free" \
 --binary-images  "iso-hybrid" \
 --binary-filesystem "fat32" \
 --build-with-chroot "true" \
 --bootloaders "syslinux,grub-efi" \
 --cache "true" \
---cache-indices "yes" \
+--cache-indices "true" \
 --cache-packages "true" \
 --cache-stages "bootstrap" \
 --checksums "sha256" \

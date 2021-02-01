@@ -1,3 +1,15 @@
+kaisen-build (1.5+kaisen6) kaisen-packages; urgency=medium
+
+  * Update hook script (systemctl disable services)
+  * Update dependancies version (for live-build and live-config)
+  * Update config script (to adapt at new live-build version)
+  * Update menus entries
+  * Add kaisen-services-management in SR branch
+  * Add installer entries (SYSLINUX and GRUB) in CUSTOM branch
+  * Remove boot beep GRUB (in EFI)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Mon, 01 Feb 2021 00:06:11 +0200
+
 kaisen-build (1.5+kaisen5) kaisen-packages; urgency=medium
 
   * Remove .build folder in CUSTOM

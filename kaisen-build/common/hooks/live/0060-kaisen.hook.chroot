@@ -4,75 +4,77 @@ set -e
 
 #Disable additionals services to reduce used RAM
 
-systemctl disable 2ping
-systemctl disable anydesk
-systemctl disable arpalert
-systemctl disable arpwatch
-systemctl disable avahi-daemon
-systemctl disable bacula-fd
-systemctl disable bacula-sd
-systemctl disable bettercap
-systemctl disable bluetooth
-systemctl disable blueman-mechanism
-systemctl disable ceph-fuse.target
-systemctl disable clamav-daemon
-systemctl disable clamav-freshclam
-systemctl disable clamav-milter
-systemctl disable containerd
-systemctl disable cups-browsed
-systemctl disable cups
-systemctl disable cups.path
-systemctl disable cups.socket
-systemctl disable docker
-systemctl disable docker.socket
-systemctl disable e2scrub_reap
-systemctl disable e2scrub_all.timer
-systemctl disable etc-setserial
-systemctl disable iptables
-systemctl disable ip6tables
-systemctl disable netfilter-persistent
-systemctl disable gns3-server
-systemctl disable hddtemp
-systemctl disable hostapd
-systemctl disable irqbalance
-systemctl disable libvirtd.service
-systemctl disable virtlockd.socket
-systemctl disable virtlogd.socket
-systemctl disable libvirtd.socket
-systemctl disable libvirtd-ro.socket
-systemctl disable libvirt-guests.service
-systemctl disable libvirtd-admin.socket
-systemctl disable virtlockd-admin.socket
-systemctl disable virtlogd-admin.socket
-systemctl disable lm-sensors
-systemctl disable lockdown
-systemctl disable lxcfs
-systemctl disable lxc-net
-systemctl disable lxc
-systemctl disable neo4j
-systemctl disable nfs-client.target
-systemctl disable nfs-kernel-server
-systemctl disable nfs-server
-systemctl disable portmap
-systemctl disable rpcbind
-systemctl disable rpcbind.socket
-systemctl disable ntp
-systemctl disable o2cb
-systemctl disable ocfs2
-systemctl disable openvpn
-systemctl disable rpcbind
-systemctl disable rpcbind.socket
-systemctl disable rsync
-systemctl disable setserial
-systemctl disable smartmontools
-systemctl disable ssh
-systemctl disable sysstat
-systemctl disable teamviewerd
-systemctl disable vboxweb
-systemctl disable virtualbox
-systemctl disable virtualbox-guest-utils
-systemctl disable open-vm-tools
-systemctl disable zfs-fuse
+systemctl disable 2ping || true
+systemctl disable anydesk || true
+systemctl disable arpalert || true
+systemctl disable arpwatch || true
+systemctl disable avahi-daemon || true
+systemctl disable bacula-fd || true
+systemctl disable bacula-sd || true
+systemctl disable bettercap || true
+systemctl disable bluetooth || true
+systemctl disable blueman-mechanism || true
+systemctl disable ceph-fuse.target || true
+systemctl disable clamav-daemon || true
+systemctl disable clamav-freshclam || true
+systemctl disable clamav-milter || true
+systemctl disable containerd || true
+systemctl disable cups-browsed || true
+systemctl disable cups || true
+systemctl disable cups.path || true
+systemctl disable cups.socket || true
+systemctl disable darkstat || true
+systemctl disable docker || true
+systemctl disable docker.socket || true
+systemctl disable e2scrub_reap || true
+systemctl disable e2scrub_all.timer || true
+systemctl disable etc-setserial || true
+systemctl disable iptables || true
+systemctl disable ip6tables || true
+systemctl disable netfilter-persistent || true
+systemctl disable gns3-server || true
+systemctl disable hddtemp || true
+systemctl disable hostapd || true
+systemctl disable irqbalance || true
+systemctl disable libvirtd.service || true
+systemctl disable virtlockd.socket || true
+systemctl disable virtlogd.socket || true
+systemctl disable libvirtd.socket || true
+systemctl disable libvirtd-ro.socket || true
+systemctl disable libvirt-guests.service || true
+systemctl disable libvirtd-admin.socket || true
+systemctl disable virtlockd-admin.socket || true
+systemctl disable virtlogd-admin.socket || true
+systemctl disable lm-sensors || true
+systemctl disable lockdown || true
+systemctl disable lxcfs || true
+systemctl disable lxc-net || true
+systemctl disable lxc || true
+systemctl disable neo4j || true
+systemctl disable nfs-client.target || true
+systemctl disable nfs-kernel-server || true
+systemctl disable nfs-server || true
+systemctl disable portmap || true
+systemctl disable rpcbind || true
+systemctl disable rpcbind.socket || true
+systemctl disable ntp || true
+systemctl disable o2cb || true
+systemctl disable ocfs2 || true
+systemctl disable openvpn || true
+systemctl disable rpcbind || true
+systemctl disable rpcbind.socket || true
+systemctl disable rsync || true
+systemctl disable setserial || true
+systemctl disable smartmontools || true
+systemctl disable ssh || true
+systemctl disable sysstat || true
+systemctl disable teamviewerd || true
+systemctl disable vboxweb || true
+systemctl disable virtualbox || true
+systemctl disable virtualbox-guest-utils || true
+systemctl disable vgauth || true
+systemctl disable open-vm-tools || true
+systemctl disable zfs-fuse || true
 
 #Remove launchers on user applications menu because replaces by launchers on Kaisen Linux menu
 

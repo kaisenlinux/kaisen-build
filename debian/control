@@ -13,9 +13,9 @@ Vcs-Browser: https://gitlab.com/kaisenlinux/packages/kaisen-build
 Package: kaisen-build
 Architecture: amd64
 Priority: optional
-Depends: live-build (>=1:20191221+kaisen1),
+Depends: live-build (>=1:20210122+kaisen1),
 	 live-boot,
 	 live-manual,
-	 live-config (>=11.0.1+kaisen1),
+	 live-config (>=11.0.2+kaisen1),
 	 debootstrap (>=1.0.123+kaisen1),
 Description: Kaisen Linux ISO build (amd64 arch)
