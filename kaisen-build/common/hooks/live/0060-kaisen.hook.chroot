@@ -45,6 +45,12 @@ systemctl disable libvirt-guests.service || true
 systemctl disable libvirtd-admin.socket || true
 systemctl disable virtlockd-admin.socket || true
 systemctl disable virtlogd-admin.socket || true
+systemctl disable spice-vdagentd.service || true
+systemctl stop spice-vdagentd.service || true
+systemctl disable spice-vdagentd.socket || true
+systemctl stop spice-vdagentd.socket || true
+systemctl disable spice-webdavd.service || true
+systemctl stop spice-webdavd.service || true
 systemctl disable lm-sensors || true
 systemctl disable lockdown || true
 systemctl disable lxcfs || true
