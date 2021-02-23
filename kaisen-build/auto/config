@@ -7,18 +7,24 @@ set -e
 params=""
 
 mkdir config || true
+
+if [[ "$variant" = "KDE" || "$variant" = "LXDE" || "$variant" = "MATE" || "$variant" = "XFCE" || "$variant" = "SR" ]]; then
 cp -rf common/* config
 cp -rfTL variant/$variant config
+elif [[ "$variant" = "CUSTOM" ]]; then
+cp -rf variant/CUSTOM/* config
+fi
 
 case $variant in
         KDE|LXDE|MATE|XFCE)
-	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Kaisen --iso-publisher Kaisen --loadlin true --win32-loader true --system live"
+	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --loadlin true --win32-loader true --system live"
         ;;
         SR)
-	params="$params --debian-installer none --iso-preparer Kaisen --iso-publisher Kaisen --system live"
+	params="$params --debian-installer none --system live"
         ;;
 	CUSTOM)
 	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --loadlin true --win32-loader true --system live"
+	;;
 esac
 
 lb config noauto \
@@ -43,8 +49,10 @@ lb config noauto \
 --distribution-chroot "kaisen-rolling" \
 --firmware-binary "true" \
 --firmware-chroot "true" \
---iso-application "Kaisen Linux Rolling $variant $version" \
---iso-volume "Kaisen Linux Rolling $variant $version" \
+--iso-preparer "Kevin Chevreuil - Kaisen" \
+--iso-publisher "Kevin Chevreuil - Kaisen" \
+--iso-application "Kaisen Linux $variant $version" \
+--iso-volume "Kaisen Linux $variant $version" \
 --linux-flavours "amd64" \
 --linux-packages "linux-image" \
 --keyring-package "kaisen-archive-keyring" \
@@ -55,13 +63,13 @@ lb config noauto \
 --backports "false" \
 --updates "false" \
 --verbose \
---parent-mirror-bootstrap "https://kaisendeb.lf.je/kaisen" \
---parent-mirror-chroot "https://kaisendeb.lf.je/kaisen" \
---parent-mirror-binary "https://kaisendeb.lf.je/kaisen" \
---parent-mirror-debian-installer "https://kaisendeb.lf.je/kaisen" \
---mirror-bootstrap "https://kaisendeb.lf.je/kaisen" \
---mirror-chroot "https://kaisendeb.lf.je/kaisen" \
---mirror-binary "https://kaisendeb.lf.je/kaisen" \
---mirror-debian-installer "https://kaisendeb.lf.je/kaisen" \
+--parent-mirror-bootstrap "https://deb.kaisenlinux.org" \
+--parent-mirror-chroot "https://deb.kaisenlinux.org" \
+--parent-mirror-binary "https://deb.kaisenlinux.org" \
+--parent-mirror-debian-installer "https://deb.kaisenlinux.org" \
+--mirror-bootstrap "https://deb.kaisenlinux.org" \
+--mirror-chroot "https://deb.kaisenlinux.org" \
+--mirror-binary "https://deb.kaisenlinux.org" \
+--mirror-debian-installer "https://deb.kaisenlinux.org" \
 --parent-archive-areas "main contrib non-free" \
 $params \

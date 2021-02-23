@@ -1,3 +1,11 @@
+kaisen-build (1.5+kaisen8) kaisen-packages; urgency=medium
+
+  * Update CUSTOM branch (adding all default folder)
+  * Update repositories on auto/config file
+  * Remove copy common/* for CUSTOM branch
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 23 Feb 2021 00:55:24 +0200
+
 kaisen-build (1.5+kaisen7) kaisen-packages; urgency=medium
 
   * Add spice daemons in hook script

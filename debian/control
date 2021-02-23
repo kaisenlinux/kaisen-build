@@ -1,21 +1,20 @@
 Source: kaisen-build
 Priority: optional
 Section: kaisen-packages
-Standards-Version: 4.5.0
+Standards-Version: 4.5.1
 Build-Depends: debhelper
-Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
-Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 Rules-Requires-Root: no
-Homepage: https://kaisen-linux.org/
+Homepage: https://kaisenlinux.org
 Vcs-Git: https://gitlab.com/kaisenlinux/packages/kaisen-build.git
 Vcs-Browser: https://gitlab.com/kaisenlinux/packages/kaisen-build
 
 Package: kaisen-build
 Architecture: amd64
 Priority: optional
-Depends: live-build (>=1:20210122+kaisen1),
+Depends: live-build (>=1:20210216+kaisen1),
 	 live-boot,
 	 live-manual,
 	 live-config (>=11.0.2+kaisen1),
-	 debootstrap (>=1.0.123+kaisen1),
+	 debootstrap (>=1.0.123+kaisen2),
 Description: Kaisen Linux ISO build (amd64 arch)

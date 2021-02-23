@@ -23,8 +23,8 @@ EXPLAINATION
 		build : build iso
 		clean : clean residual files
 
-      variant - MATE, XFCE, KDE, LXDE
-		the graphical interface to use
+      variant - MATE, XFCE, KDE, LXDE, SR, CUSTOM
+		the graphical interface to use (or usr SR release)
 
       version - select your version number
 
@@ -37,13 +37,8 @@ EXAMPLE
 function kaisen-build() {
 	lb build
 	case $variant in
-		KDE|LXDE|MATE|XFCE)
+		KDE|LXDE|MATE|XFCE|SR)
 	mv live-image-amd64.hybrid.iso ../kaisenlinuxrolling$version-amd64-$variant.iso
-	;;
-	esac
-	case $variant in
-		SR)
-	mv live-image-amd64.hybrid.iso ../kaisenlinux$version-amd64-SR.iso
 	;;
 	esac
 	case $variant in
@@ -57,7 +52,7 @@ function kaisen-build() {
 
 function clean() {
 	lb clean
-	rm -rf cache config .build || true
+	rm -rf cache config unpacked-initrd .build || true
 }
 
 case $1 in
