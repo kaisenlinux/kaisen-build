@@ -1,3 +1,9 @@
+kaisen-build (1.5+kaisen9) kaisen-packages; urgency=medium
+
+  * Remove no commented packages in variant/CUSTOM/package-lists/custom.list.chroot
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 23 Feb 2021 06:12:23 +0200
+
 kaisen-build (1.5+kaisen8) kaisen-packages; urgency=medium
 
   * Update CUSTOM branch (adding all default folder)
