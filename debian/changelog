@@ -1,3 +1,9 @@
+kaisen-build (1.5+kaisen10) kaisen-packages; urgency=medium
+
+  * Adding default hooks in common directory
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 24 Feb 2021 21:55:56 +0200
+
 kaisen-build (1.5+kaisen9) kaisen-packages; urgency=medium
 
   * Remove no commented packages in variant/CUSTOM/package-lists/custom.list.chroot
