@@ -1,3 +1,9 @@
+kaisen-build (1.5+kaisen11) kaisen-packages; urgency=medium
+
+  * Remove teamviewer and anydesk on hook script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 09 Mar 2021 00:17:46 +0200
+
 kaisen-build (1.5+kaisen10) kaisen-packages; urgency=medium
 
   * Adding default hooks in common directory

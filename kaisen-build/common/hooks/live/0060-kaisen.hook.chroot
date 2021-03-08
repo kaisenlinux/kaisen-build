@@ -5,7 +5,6 @@ set -e
 #Disable additionals services to reduce used RAM
 
 systemctl disable 2ping || true
-systemctl disable anydesk || true
 systemctl disable arpalert || true
 systemctl disable arpwatch || true
 systemctl disable avahi-daemon || true
@@ -74,7 +73,6 @@ systemctl disable setserial || true
 systemctl disable smartmontools || true
 systemctl disable ssh || true
 systemctl disable sysstat || true
-systemctl disable teamviewerd || true
 systemctl disable vboxweb || true
 systemctl disable virtualbox || true
 systemctl disable virtualbox-guest-utils || true
@@ -84,7 +82,6 @@ systemctl disable zfs-fuse || true
 
 #Remove launchers on user applications menu because replaces by launchers on Kaisen Linux menu
 
-rm -f /usr/share/applications/anydesk.desktop || true
 rm -f /usr/share/applications/balena-etcher-electron.desktop || true
 rm -f /usr/share/applications/bat.desktop || true
 rm -f /usr/share/applications/bleachbit-root.desktop || true
@@ -93,7 +90,6 @@ rm -f /usr/share/applications/clamtk-kde.desktop || true
 rm -f /usr/share/applications/clusterssh.desktop || true
 rm -f /usr/share/applications/codium.desktop || true
 rm -f /usr/share/applications/codium-url-handler.desktop || true
-rm -f /usr/share/applications/com.teamviewer.TeamViewer.desktop || true
 rm -f /usr/share/applications/conky.desktop || true
 rm -f /usr/share/applications/debian-uxterm.desktop || true
 rm -f /usr/share/applications/debian-xterm.desktop || true
@@ -143,7 +139,6 @@ rm -f /usr/share/applications/R.desktop || true
 rm -f /usr/share/applications/remote-viewer.desktop || true
 rm -f /usr/share/applications/remmina-file.desktop || true
 rm -f /usr/share/applications/remmina-gnome.desktop || true
-rm -f /usr/share/applications/teamviewerapi.desktop || true
 rm -f /usr/share/applications/terminator.desktop || true
 rm -f /usr/share/applications/timeshift-gtk.desktop || true
 rm -f /usr/share/applications/unetbootin.desktop || true
