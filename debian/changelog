@@ -1,3 +1,9 @@
+kaisen-build (1.5+kaisen15) kaisen-packages; urgency=medium
+
+  * Commented lines on preseed file are traduced in English
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 28 Mar 2021 19:28:09 +0200
+
 kaisen-build (1.5+kaisen14) kaisen-packages; urgency=medium
 
   * Remove kaisen-documentation and kaisen-manpages on all packages.list
