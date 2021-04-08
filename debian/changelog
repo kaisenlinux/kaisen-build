@@ -1,3 +1,12 @@
+kaisen-build (1.6+kaisen1) kaisen-packages; urgency=medium
+
+  * Update live-build version
+  * GRUB and SYSLINUX menu updated to 1.7
+  * Remove kaisen-documentation and kaisen-manpages on
+    CUSTOM/packages.list/custom.list.chroot
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 30 Mar 2021 10:16:47 +0200
+
 kaisen-build (1.6) kaisen-packages; urgency=medium
 
   * Update to 1.6 (no sources changes)

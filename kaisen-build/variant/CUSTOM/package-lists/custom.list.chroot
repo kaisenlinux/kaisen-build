@@ -1,8 +1,8 @@
 #Graphical interface
 
+#kaisen-kde
 #kaisen-lxde
 #kaisen-mate
-#kaisen-kde
 #kaisen-xfce
 
 #Kaisen Linux metapackages
@@ -14,5 +14,3 @@
 #kaisen-services-management
 #kaisen-sysadmin-tools
 #kaisen-network-tools
-#kaisen-documentation
-#kaisen-manpages
