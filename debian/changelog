@@ -1,11 +1,20 @@
+kaisen-build (1.6+kaisen2) kaisen-packages; urgency=medium
+
+  * Update hook script to delete the launchers deletion (now executed by trigger dpkg)
+  * Update ISOLINUX menu entries on CUSTOM branch (change rolling to custom)
+  * Disabling services is now done via /opt/services/all-services-disable in the chroot
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 09 Apr 2021 20:06:29 +0200
+
 kaisen-build (1.6+kaisen1) kaisen-packages; urgency=medium
 
   * Update live-build version
   * GRUB and SYSLINUX menu updated to 1.7
   * Remove kaisen-documentation and kaisen-manpages on
     CUSTOM/packages.list/custom.list.chroot
+  * Update hook script to delete the launchers deletion (now executed by trigger dpkg)
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 30 Mar 2021 10:16:47 +0200
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 09 Apr 2021 13:56:14 +0200
 
 kaisen-build (1.6) kaisen-packages; urgency=medium
 
