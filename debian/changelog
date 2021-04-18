@@ -1,3 +1,11 @@
+kaisen-build (1.6+kaisen3) kaisen-testing; urgency=medium
+
+  * Add remove bit executable for apt-btrfs-snapshot on hook script for live system
+    and installer
+  * Remove preseed command (replace by script of live-installer package)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 18 Apr 2021 20:45:22 +0200
+
 kaisen-build (1.6+kaisen2) kaisen-packages; urgency=medium
 
   * Update hook script to delete the launchers deletion (now executed by trigger dpkg)

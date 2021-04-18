@@ -3,20 +3,22 @@
 set -e
 
 #Disable additionals services to reduce used RAM
-
 if [ -e /opt/services/all-services-disable ] && [ -x /opt/services/all-services-disable ]; then
 	/opt/services/all-services-disable
 fi
 
 #Hold Linux for fix broken usb persistence key after Linux upgrade
-
 for kernel in $(dpkg --get-selections | grep '^linux-' | awk '{ print $1 }' && dpkg --get-selections | grep '^libcpupower1' | awk '{ print $1 }')
 do
 	apt-mark hold $kernel
 done
 
 #Launch updatedb command for mlocate
-
 if [ -x "$(which updatedb 2>/dev/null)" ]; then
 	updatedb
+fi
+
+#Remove bit executable for apt-btrfs-snapshot because apt-btrfs-snapshot taken snapshot during installation and not functional on live system
+if [ -e /usr/bin/apt-btrfs-snapshot ] && [ -x /usr/bin/apt-btrfs-snapshot ]; then
+	chmod -x /usr/bin/apt-btrfs-snapshot
 fi
