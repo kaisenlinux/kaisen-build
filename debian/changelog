@@ -1,3 +1,21 @@
+kaisen-build (1.6+kaisen6) kaisen-packages; urgency=medium
+
+  * Add dependancies:
+    - debian-cd
+    - simple-cdd
+    - tasksel
+  * Create netinst branch (experimental)
+    - Folder NETINST in variant/
+    - Build with simple-cdd
+    - Add warning message for NETINST (for use only in testing)
+  * Add check if variant folder exist
+  * Addition of end of build message (location and name
+    of the ISO and on the deleted generated files)
+  * Fix typo for on variables
+  * Move splash.png of KDE, LXDE, MATE and XFCE to common folder
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 04 Mar 2021 21:16:12 +0200
+
 kaisen-build (1.6+kaisen5) kaisen-packages; urgency=medium
 
   * Update debootstrap version on control file

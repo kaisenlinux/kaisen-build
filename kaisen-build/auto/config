@@ -4,26 +4,26 @@
 
 set -e
 
-params=""
+PARAMS=""
 
 mkdir config || true
 
-if [[ "$variant" = "KDE" || "$variant" = "LXDE" || "$variant" = "MATE" || "$variant" = "XFCE" || "$variant" = "SR" ]]; then
+if [[ "$VARIANT" = "KDE" || "$VARIANT" = "LXDE" || "$VARIANT" = "MATE" || "$VARIANT" = "XFCE" || "$VARIANT" = "SR" ]]; then
 cp -rf common/* config
-cp -rfTL variant/$variant config
-elif [[ "$variant" = "CUSTOM" ]]; then
+cp -rfTL variant/$VARIANT config
+elif [[ "$VARIANT" = "CUSTOM" ]]; then
 cp -rf variant/CUSTOM/* config
 fi
 
-case $variant in
+case $VARIANT in
         KDE|LXDE|MATE|XFCE)
-	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --loadlin true --win32-loader true --system live"
+	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --loadlin true --win32-loader true --system live"
         ;;
         SR)
-	params="$params --debian-installer none --system live"
+	PARAMS="$PARAMS --debian-installer none --system live"
         ;;
 	CUSTOM)
-	params="$params --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --loadlin true --win32-loader true --system live"
+	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --loadlin true --win32-loader true --system live"
 	;;
 esac
 
@@ -72,4 +72,4 @@ lb config noauto \
 --mirror-binary "https://deb.kaisenlinux.org" \
 --mirror-debian-installer "https://deb.kaisenlinux.org" \
 --parent-archive-areas "main contrib non-free" \
-$params \
+$PARAMS \
