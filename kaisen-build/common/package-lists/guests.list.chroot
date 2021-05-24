@@ -1,0 +1,11 @@
+virtualbox-guest-dkms
+virtualbox-guest-source
+virtualbox-guest-utils
+virtualbox-guest-x11
+open-vm-tools
+open-vm-tools-desktop
+xserver-xorg-video-qxl
+qemu-guest-agent
+spice-vdagent
+spice-webdavd
+hyperv-daemons

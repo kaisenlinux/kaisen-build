@@ -1,3 +1,10 @@
+kaisen-build (1.6+kaisen8) kaisen-packages; urgency=medium
+
+  * Add guests.list.chroot on the common folder to include
+    the virtualization guests
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 24 May 2021 00:20:26 +0200
+
 kaisen-build (1.6+kaisen7) kaisen-packages; urgency=medium
 
   * Remove variant/NETINST when package is upgrade or remove
