@@ -1,3 +1,13 @@
+kaisen-build (1.6+kaisen8) kaisen-packages; urgency=medium
+
+  * Add guests.list.chroot on the common folder to include
+    the virtualization guests
+  * Add info file in common/includes.binary/.disk
+  * A log file will be created in /var/log when kaisen-build will be executed
+  * Update EXPLANATION function
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 24 May 2021 22:27:25 +0200
+
 kaisen-build (1.6+kaisen7) kaisen-packages; urgency=medium
 
   * Remove variant/NETINST when package is upgrade or remove
