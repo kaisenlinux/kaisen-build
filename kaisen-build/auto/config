@@ -11,6 +11,10 @@ mkdir config || true
 if [[ "$VARIANT" = "KDE" || "$VARIANT" = "LXDE" || "$VARIANT" = "MATE" || "$VARIANT" = "XFCE" || "$VARIANT" = "SR" ]]; then
 cp -rf common/* config
 cp -rfTL variant/$VARIANT config
+elif [[ "$VARIANT" = "CONSOLE" ]]; then
+cp -rf common/* config
+cp -rf variant/CONSOLE/* config
+rm config/package-lists/guests.list.chroot
 elif [[ "$VARIANT" = "CUSTOM" ]]; then
 cp -rf variant/CUSTOM/* config
 fi
@@ -19,7 +23,7 @@ case $VARIANT in
         KDE|LXDE|MATE|XFCE)
 	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --loadlin true --win32-loader true --system live"
         ;;
-        SR)
+        SR|CONSOLE)
 	PARAMS="$PARAMS --debian-installer none --system live"
         ;;
 	CUSTOM)

@@ -34,8 +34,11 @@ EXPLAINATION
 		build: build iso
 		clean: clean residual files
 
-      variant - MATE, XFCE, KDE, LXDE, SR, NETINST, CUSTOM
-		the graphical interface to use (or SR or NETINST or CUSTOM use)
+      variant - MATE, XFCE, KDE, LXDE, SR, CONSOLE, NETINST, CUSTOM
+		the graphical interface to use (MATE, XFCE, KDE or LXDE)
+		or use System Rescue version (Only technicians tools, SR variant)
+		or use Console Only (no GUI, CONSOLE variant)
+		or use network installer (no live, NETINST variant)
 
       version - select your version number
 
@@ -53,7 +56,7 @@ function kaisen-build() {
 		echo -e $RED "The variant $VARIANT does not exist or does not a folder in variant folder."
 	fi
 	case $VARIANT in
-		KDE|LXDE|MATE|XFCE|SR)
+		KDE|LXDE|MATE|XFCE|SR|CONSOLE)
 	log
 	lb build
 	mv live-image-amd64.hybrid.iso ../kaisenlinuxrolling$VERSION-amd64-$VARIANT.iso

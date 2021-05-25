@@ -1,3 +1,11 @@
+kaisen-build (1.6+kaisen9) kaisen-packages; urgency=medium
+
+  * Add CONSOLE variant (this variant contains all tools
+    but no GUI will be present in live system. No installer
+    is included)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 25 May 2021 02:12:11 +0200
+
 kaisen-build (1.6+kaisen8) kaisen-packages; urgency=medium
 
   * Add guests.list.chroot on the common folder to include
