@@ -1,3 +1,12 @@
+kaisen-build (1.6+kaisen10) kaisen-packages; urgency=medium
+
+  * Improvement of the CONSOLE variant:
+    - only CLI tools are included
+    - no include firmwares in the ISO and in the live system
+    - smaller ISO image
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 28 May 2021 23:26:16 +0200
+
 kaisen-build (1.6+kaisen9) kaisen-packages; urgency=medium
 
   * Add CONSOLE variant (this variant contains all tools

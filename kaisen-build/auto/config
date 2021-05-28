@@ -21,13 +21,16 @@ fi
 
 case $VARIANT in
         KDE|LXDE|MATE|XFCE)
-	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --loadlin true --win32-loader true --system live"
+	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --loadlin true --win32-loader true --system live --firmware-binary true --firmware-chroot true"
         ;;
-        SR|CONSOLE)
-	PARAMS="$PARAMS --debian-installer none --system live"
+        SR)
+	PARAMS="$PARAMS --debian-installer none --system live --firmware-binary true --firmware-chroot true"
+	;;
+	CONSOLE)
+	PARAMS="$PARAMS --debian-installer none --system live --firmware-binary false --firmware-chroot false"
         ;;
 	CUSTOM)
-	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --loadlin true --win32-loader true --system live"
+	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --loadlin true --win32-loader true --system live --firmware-binary true --firmware-chroot true"
 	;;
 esac
 
@@ -51,8 +54,6 @@ lb config noauto \
 --distribution "kaisen-rolling" \
 --distribution-binary "kaisen-rolling" \
 --distribution-chroot "kaisen-rolling" \
---firmware-binary "true" \
---firmware-chroot "true" \
 --iso-preparer "Kevin Chevreuil - Kaisen" \
 --iso-publisher "Kevin Chevreuil - Kaisen" \
 --iso-application "Kaisen Linux $variant $version" \
