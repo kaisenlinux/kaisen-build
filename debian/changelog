@@ -1,3 +1,9 @@
+kaisen-build (1.6+kaisen11) kaisen-packages; urgency=medium
+
+  * Fix typo in auto/config
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 30 May 2021 04:41:37 +0200
+
 kaisen-build (1.6+kaisen10) kaisen-packages; urgency=medium
 
   * Improvement of the CONSOLE variant:

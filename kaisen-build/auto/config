@@ -56,8 +56,8 @@ lb config noauto \
 --distribution-chroot "kaisen-rolling" \
 --iso-preparer "Kevin Chevreuil - Kaisen" \
 --iso-publisher "Kevin Chevreuil - Kaisen" \
---iso-application "Kaisen Linux $variant $version" \
---iso-volume "Kaisen Linux $variant $version" \
+--iso-application "Kaisen Linux $VARIANT $VERSION" \
+--iso-volume "Kaisen Linux $VARIANT $VERSION" \
 --linux-flavours "amd64" \
 --linux-packages "linux-image" \
 --keyring-package "kaisen-archive-keyring" \
