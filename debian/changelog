@@ -1,3 +1,10 @@
+kaisen-build (1.6+kaisen12) kaisen-packages; urgency=medium
+
+  * New fix typo $version and $variant in auto/config 
+  * Fix typo in kaisen-build script for $version and $variant 
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 30 May 2021 05:25:42 +0200
+
 kaisen-build (1.6+kaisen11) kaisen-packages; urgency=medium
 
   * Fix typo in auto/config

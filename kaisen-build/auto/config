@@ -8,18 +8,18 @@ PARAMS=""
 
 mkdir config || true
 
-if [[ "$VARIANT" = "KDE" || "$VARIANT" = "LXDE" || "$VARIANT" = "MATE" || "$VARIANT" = "XFCE" || "$VARIANT" = "SR" ]]; then
+if [[ "$variant" = "KDE" || "$variant" = "LXDE" || "$variant" = "MATE" || "$variant" = "XFCE" || "$variant" = "SR" ]]; then
 cp -rf common/* config
-cp -rfTL variant/$VARIANT config
-elif [[ "$VARIANT" = "CONSOLE" ]]; then
+cp -rfTL variant/$variant config
+elif [[ "$variant" = "CONSOLE" ]]; then
 cp -rf common/* config
 cp -rf variant/CONSOLE/* config
 rm config/package-lists/guests.list.chroot
-elif [[ "$VARIANT" = "CUSTOM" ]]; then
+elif [[ "$variant" = "CUSTOM" ]]; then
 cp -rf variant/CUSTOM/* config
 fi
 
-case $VARIANT in
+case $variant in
         KDE|LXDE|MATE|XFCE)
 	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --loadlin true --win32-loader true --system live --firmware-binary true --firmware-chroot true"
         ;;
@@ -56,8 +56,8 @@ lb config noauto \
 --distribution-chroot "kaisen-rolling" \
 --iso-preparer "Kevin Chevreuil - Kaisen" \
 --iso-publisher "Kevin Chevreuil - Kaisen" \
---iso-application "Kaisen Linux $VARIANT $VERSION" \
---iso-volume "Kaisen Linux $VARIANT $VERSION" \
+--iso-application "Kaisen Linux $variant $version" \
+--iso-volume "Kaisen Linux $variant $version" \
 --linux-flavours "amd64" \
 --linux-packages "linux-image" \
 --keyring-package "kaisen-archive-keyring" \
