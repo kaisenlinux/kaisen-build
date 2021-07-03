@@ -2,9 +2,15 @@
 
 set -e
 
+GREEN='\e[1;32m'
+RED='\e[1;31m'
+
 #Disable additionals services to reduce used RAM
 if [ -e /opt/services/all-services-disable ] && [ -x /opt/services/all-services-disable ]; then
 	/opt/services/all-services-disable
+	echo -e $GREEN "All services has been disabled.";tput init
+else
+	echo -e $RED "The package kaisen-services-management has not found. All services has not been disabled.";tput init
 fi
 
 #Hold Linux for fix broken usb persistence key after Linux upgrade
@@ -12,13 +18,28 @@ for kernel in $(dpkg --get-selections | grep '^linux-' | awk '{ print $1 }' && d
 do
 	apt-mark hold $kernel
 done
+echo -e $GREEN "All Linux packages has been hold.";tput init
 
 #Launch updatedb command for mlocate
 if [ -x "$(which updatedb 2>/dev/null)" ]; then
 	updatedb
+	echo -e $GREEN "The mlocate database has been updated.";tput init
+else
+	echo -e $RED "The updatedb command not found. Nothing action is required.";tput init
 fi
 
 #Remove bit executable for apt-btrfs-snapshot because apt-btrfs-snapshot taken snapshot during installation and not functional on live system
 if [ -e /usr/bin/apt-btrfs-snapshot ] && [ -x /usr/bin/apt-btrfs-snapshot ]; then
+	echo -e $GREEN "The apt-btrfs-snapshot command has been found. Readding executable bit.";tput init
 	chmod -x /usr/bin/apt-btrfs-snapshot
+else
+	echo -e $RED "The apt-btrfs-snapshot command has not found. Nothing action is required.";tput init
+fi
+
+#Auto load VirtualBox module at boot
+if [ -e /usr/lib/modules/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/updates/vboxdrv.ko ] && [ -e /var/lib/dkms/virtualbox/[0-9]*.[0-9]*.[0-9]*/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/x86_64/module/vboxdrv.ko ]; then
+	echo "vboxdrv" > /etc/modules-load.d/virtualbox.conf
+	echo -e $GREEN "The vboxdrv module has been added for start at boot.";tput init
+else
+	echo -e $RED "VirtualBox has not installed. Nothing action is required.";tput init
 fi
