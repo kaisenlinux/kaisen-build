@@ -1,3 +1,14 @@
+kaisen-build (1.6+kaisen13) kaisen-packages; urgency=medium
+
+  * Remove the warning when the netinst branch is used
+  * Reorganize typo in kaisen-build script
+  * A log file will be created on demand when kaisen-build is used.
+  * Add check and auto load VirtualBox module at boot
+  * Add infos on hook script when the task is being executed or
+    is not being executed
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 03 Jul 2021 15:29:58 +0200
+
 kaisen-build (1.6+kaisen12) kaisen-packages; urgency=medium
 
   * New fix typo $version and $variant in auto/config 
