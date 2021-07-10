@@ -12,9 +12,8 @@ if [[ "$variant" = "KDE" || "$variant" = "LXDE" || "$variant" = "MATE" || "$vari
 cp -rf common/* config
 cp -rfTL variant/$variant config
 elif [[ "$variant" = "CONSOLE" ]]; then
-cp -rf common/* config
+cp -rf common/*[!guests.list.chroot] config
 cp -rf variant/CONSOLE/* config
-rm config/package-lists/guests.list.chroot
 elif [[ "$variant" = "CUSTOM" ]]; then
 cp -rf variant/CUSTOM/* config
 fi

@@ -72,6 +72,8 @@ fi
 
 case $variant in
 	KDE|LXDE|MATE|XFCE|SR|CONSOLE)
+		lb clean
+		rm -rf cache config unpacked-initrd .build tmp images || true
 		lb build
 		mv live-image-amd64.hybrid.iso ../kaisenlinuxrolling$version-amd64-$variant.iso
 		echo -e $YELLOW "ISO can be found in ../kaisenlinuxrolling$version-amd64-$variant.iso";tput init
@@ -83,6 +85,8 @@ esac
 
 case $variant in
     CUSTOM)
+		lb clean
+		rm -rf cache config unpacked-initrd .build tmp images || true
 		lb build
 		mv live-image-amd64.hybrid.iso ../kaisenlinuxCUSTOM-amd64-$version.iso
 		echo -e $YELLOW "ISO can be found in ../kaisenlinuxCUSTOM-amd64-$version.iso";tput init
@@ -94,6 +98,7 @@ esac
 
 case $variant in
 	NETINST)
+		rm -rf cache config unpacked-initrd .build tmp images || true
 		build-simple-cdd \
 		--verbose \
 		--debug \

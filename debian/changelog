@@ -1,3 +1,10 @@
+kaisen-build (1.6+kaisen14) kaisen-packages; urgency=medium
+
+  * Update config script
+  * The clean is executed before build
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 10 Jul 2021 16:25:51 +0200
+
 kaisen-build (1.6+kaisen13) kaisen-packages; urgency=medium
 
   * Remove the warning when the netinst branch is used
