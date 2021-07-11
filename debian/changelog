@@ -1,3 +1,9 @@
+kaisen-build (1.6+kaisen15) kaisen-packages; urgency=medium
+
+  * Update NETINST hook
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 10 Jul 2021 20:20:16 +0200
+
 kaisen-build (1.6+kaisen14) kaisen-packages; urgency=medium
 
   * Update config script
