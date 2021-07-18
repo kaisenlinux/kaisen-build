@@ -1,3 +1,11 @@
+kaisen-build (1.7) kaisen-packages; urgency=medium
+
+  * Add kaisen-documentation and kaisen-manpages
+    to the install on lives
+  * Package in 1.7
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 18 Jul 2021 14:29:19 +0200
+
 kaisen-build (1.6+kaisen15) kaisen-packages; urgency=medium
 
   * Update NETINST hook
