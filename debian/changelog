@@ -1,11 +1,18 @@
+kaisen-build (1.8) kaisen-packages; urgency=medium
+
+  * Update package in 1.8 version
+  * Add kaisen profile for NETINST branch
+  * Update typo in kaisen-build/common/includes.installer/preseed.cfg
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 31 Jul 2021 09:48:12 +0200
+
 kaisen-build (1.7) kaisen-packages; urgency=medium
 
   * Add kaisen-documentation and kaisen-manpages
     to the install on lives
   * Package in 1.7
-  * Add xorriso dependancy
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 19 Jul 2021 02:27:23 +0200
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 18 Jul 2021 14:29:19 +0200
 
 kaisen-build (1.6+kaisen15) kaisen-packages; urgency=medium
 
