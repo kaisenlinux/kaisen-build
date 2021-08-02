@@ -9,8 +9,8 @@ BASEDIR=$(pwd)
 cd $CDDIR
 
 change_text() {
-    sed -i -e 's|_Debian GNU/Linux installer menu (BIOS mode)|Kaisen Linux Rolling NETINST 1.7|g' \
-	-e 's|Kaisen GNU/Linux Rolling|Kaisen Linux Rolling NETINST 1.7|g' \
+    sed -i -e 's|_Debian GNU/Linux installer menu (BIOS mode)|Kaisen Linux Rolling NETINST 1.8|g' \
+	-e 's|Kaisen GNU/Linux Rolling|Kaisen Linux Rolling NETINST 1.8|g' \
 	-e 's|Debian GNU/Linux|Kaisen GNU/Linux|g' \
 	"$@"
 }
