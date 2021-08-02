@@ -100,14 +100,12 @@ case $variant in
 	NETINST)
 		rm -rf cache config unpacked-initrd .build tmp images || true
 		build-simple-cdd \
-		--profiles kaisen \
-		--auto-profiles kaisen \
 		--verbose \
 		--debug \
 		--force-root \
 		--conf variant/NETINST/simple-cdd.conf \
 		--dist kaisen-rolling \
-		--debian-mirror https://deb.kaisenlinux.org
+		--debian-mirror https://deb.kaisenlinux.org/
 		mv images/kaisen-Rolling-amd64-NETINST-1.iso ../kaisenlinuxrolling$version-amd64-$variant.iso
 		echo -e $YELLOW "ISO can be found in ../kaisenlinuxrolling$version-amd64-$variant.iso"
 		rm -rf tmp images || true
