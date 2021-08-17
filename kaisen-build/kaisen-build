@@ -57,7 +57,7 @@ if [ ! -e variant/$variant ] && [ ! -d variant/$variant ]; then
 fi
 
 while [[ $OPTION != "y" && $OPTION != "n" ]]; do
-    read -rp "$(echo -e $GREEN "Do you wish create a log file? [y/n]")" OPTION
+    read -rp "$(echo -e $GREEN "Would you like create a log file? [y/n]")" OPTION
 	echo ""
 done
 

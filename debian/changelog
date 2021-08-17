@@ -1,3 +1,10 @@
+kaisen-build (1.8+kaisen1) kaisen-packages; urgency=medium
+
+  * Update menus in 2.0
+  * Update typo in the kaisen-build script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 17 Aug 2021 14:49:49 +0200
+
 kaisen-build (1.8) kaisen-packages; urgency=medium
 
   * Update package in 1.8 version
