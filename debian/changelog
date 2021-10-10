@@ -1,3 +1,11 @@
+kaisen-build (1.8+kaisen3) kaisen-packages; urgency=medium
+
+  * Update live-build version required for this package in control file
+  * Update simple-cdd version required for this package in control file
+  * Update preseed file to define defaults settings for expert installation
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 10 Oct 2021 04:06:11 +0200
+
 kaisen-build (1.8+kaisen2) kaisen-packages; urgency=medium
 
   * Replacing kaisen-lxde by kaisen-xfce in the SR branch
