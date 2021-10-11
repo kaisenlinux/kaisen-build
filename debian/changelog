@@ -1,3 +1,9 @@
+kaisen-build (1.8+kaisen4) kaisen-packages; urgency=medium
+
+  * Update debian-cd version required for this package in control file
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 11 Oct 2021 01:56:04 +0200
+
 kaisen-build (1.8+kaisen3) kaisen-packages; urgency=medium
 
   * Update live-build version required for this package in control file
