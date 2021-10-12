@@ -8,12 +8,9 @@ PARAMS=""
 
 mkdir config || true
 
-if [[ "$variant" = "KDE" || "$variant" = "LXDE" || "$variant" = "MATE" || "$variant" = "XFCE" || "$variant" = "SR" ]]; then
+if [[ "$variant" = "KDE" || "$variant" = "LXDE" || "$variant" = "MATE" || "$variant" = "XFCE" || "$variant" = "SR" || "$variant" = "CONSOLE" ]]; then
 cp -rf common/* config
 cp -rfTL variant/$variant config
-elif [[ "$variant" = "CONSOLE" ]]; then
-cp -rf common/*[!guests.list.chroot] config
-cp -rf variant/CONSOLE/* config
 elif [[ "$variant" = "CUSTOM" ]]; then
 cp -rf variant/CUSTOM/* config
 fi
