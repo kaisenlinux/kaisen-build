@@ -1,3 +1,11 @@
+kaisen-build (1.8+kaisen6) kaisen-packages; urgency=medium
+
+  * Update simple-cdd version required for this package in control file
+  * Update echo colors in 0060-kaisen-hook
+  * Add kaisen-btrfs-snapshots in KDE, MATE, LXDE and XFCE variant
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 12 Oct 2021 01:36:58 +0200
+
 kaisen-build (1.8+kaisen5) kaisen-packages; urgency=medium
 
   * Update tasksel version required for this package in control file
