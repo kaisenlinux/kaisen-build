@@ -1,3 +1,9 @@
+kaisen-build (1.8+kaisen8) kaisen-packages; urgency=medium
+
+  * Update simple-cdd version require
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 15 Oct 2021 04:35:48 +0200
+
 kaisen-build (1.8+kaisen7) kaisen-packages; urgency=medium
 
   * Update simple-cdd version require
