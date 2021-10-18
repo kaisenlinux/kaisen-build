@@ -17,16 +17,16 @@ fi
 
 case $variant in
         KDE|LXDE|MATE|XFCE)
-	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --loadlin true --win32-loader true --system live --firmware-binary true --firmware-chroot true"
+	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --firmware-binary true --firmware-chroot true"
         ;;
         SR)
-	PARAMS="$PARAMS --debian-installer none --system live --firmware-binary true --firmware-chroot true"
+	PARAMS="$PARAMS --debian-installer none --firmware-binary true --firmware-chroot true"
 	;;
 	CONSOLE)
-	PARAMS="$PARAMS --debian-installer none --system live --firmware-binary false --firmware-chroot false"
+	PARAMS="$PARAMS --debian-installer none --firmware-binary false --firmware-chroot false"
         ;;
 	CUSTOM)
-	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --loadlin true --win32-loader true --system live --firmware-binary true --firmware-chroot true"
+	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --firmware-binary true --firmware-chroot true"
 	;;
 esac
 
@@ -35,18 +35,21 @@ lb config noauto \
 --apt-indices "true" \
 --apt-recommends "true" \
 --apt-secure "true" \
+--apt-source-archives "true" \
 --architecture "amd64" \
 --archive-areas "main contrib non-free" \
---binary-images  "iso-hybrid" \
+--binary-image "iso-hybrid" \
 --binary-filesystem "fat32" \
 --build-with-chroot "true" \
 --bootloaders "syslinux,grub-efi" \
---cache "true" \
---cache-indices "true" \
---cache-packages "true" \
---cache-stages "bootstrap" \
---checksums "sha256" \
+--cache "false" \
+--cache-indices "false" \
+--cache-packages "false" \
+--checksums "none" \
+--chroot-squashfs-compression-type "zstd" \
 --clean \
+--color \
+--debconf-frontend "noninteractive" \
 --distribution "kaisen-rolling" \
 --distribution-binary "kaisen-rolling" \
 --distribution-chroot "kaisen-rolling" \
@@ -63,6 +66,10 @@ lb config noauto \
 --uefi-secure-boot "disable" \
 --backports "false" \
 --updates "false" \
+--win32-loader "false" \
+--loadlin "false" \
+--zsync "false" \
+--system "live" \
 --verbose \
 --parent-mirror-bootstrap "https://deb.kaisenlinux.org" \
 --parent-mirror-chroot "https://deb.kaisenlinux.org" \
