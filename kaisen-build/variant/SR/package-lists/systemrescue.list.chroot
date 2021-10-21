@@ -1,3 +1,4 @@
+#Default packages for SR
 kaisen-xfce
 kaisen-technicians-tools
 kaisen-miscellaneous
@@ -6,3 +7,9 @@ kaisen-firmwares
 kaisen-services-management
 kaisen-documentation
 kaisen-manpages
+
+#Packages required for CONSOLE mode
+kbd
+console-data
+console-setup
+xinit

@@ -8,7 +8,7 @@ PARAMS=""
 
 mkdir config || true
 
-if [[ "$variant" = "KDE" || "$variant" = "LXDE" || "$variant" = "MATE" || "$variant" = "XFCE" || "$variant" = "SR" || "$variant" = "CONSOLE" ]]; then
+if [[ "$variant" = "KDE" || "$variant" = "LXDE" || "$variant" = "MATE" || "$variant" = "XFCE" || "$variant" = "SR" ]]; then
 cp -rf common/* config
 cp -rfTL variant/$variant config
 elif [[ "$variant" = "CUSTOM" ]]; then
@@ -22,9 +22,6 @@ case $variant in
         SR)
 	PARAMS="$PARAMS --debian-installer none --firmware-binary true --firmware-chroot true"
 	;;
-	CONSOLE)
-	PARAMS="$PARAMS --debian-installer none --firmware-binary false --firmware-chroot false"
-        ;;
 	CUSTOM)
 	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --firmware-binary true --firmware-chroot true"
 	;;
@@ -46,7 +43,7 @@ lb config noauto \
 --cache-indices "false" \
 --cache-packages "false" \
 --checksums "none" \
---chroot-squashfs-compression-type "zstd" \
+--chroot-squashfs-compression-type "xz" \
 --clean \
 --color \
 --debconf-frontend "noninteractive" \

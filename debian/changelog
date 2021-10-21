@@ -1,3 +1,18 @@
+kaisen-build (1.8+kaisen10) kaisen-packages; urgency=medium
+
+  * Use xz for chroot-squashfs-compression-type
+  * Remove CONSOLE variant (CONSOLE mode integrated in SR variant)
+  * Add hook 0070-sr.hook.chroot to apply settings for CONSOLE mode
+    - Disable lightdm
+    - Remove motd defaults messages
+    - Hold base-files, xinit, lightdm, lightdm-gtk-greeter and
+      unattended-upgrades packages
+  * Add xinit, console-data, console-setup and kbd packages in
+    SR variant that are required for CONSOLE mode
+  * Add xinitrc script and custom motd script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 21 Oct 2021 23:36:21 +0200
+
 kaisen-build (1.8+kaisen9) kaisen-packages; urgency=medium
 
   * In auto/config script

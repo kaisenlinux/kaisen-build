@@ -10,9 +10,9 @@ RED='\e[1;31m'
 echo -e $YELLOW "Disable additionals services to reduce used RAM"
 if [ -e /opt/services/all-services-disable ] && [ -x /opt/services/all-services-disable ]; then
 	/opt/services/all-services-disable
-	echo -e $GREEN "All services has been disabled.";tput init
+	echo -e $GREEN "All services was disabled.";tput init
 else
-	echo -e $YELLOW "The package kaisen-services-management has not found. Not all services have been disabled.";tput init
+	echo -e $YELLOW "The package kaisen-services-management has not found. Not all services was disabled.";tput init
 fi
 
 #Hold Linux for fix broken usb persistence key after Linux upgrade
@@ -21,13 +21,13 @@ for kernel in $(dpkg --get-selections | grep '^linux-' | awk '{ print $1 }' && d
 do
 	apt-mark hold $kernel
 done
-echo -e $GREEN "All Linux packages have been successfully hold.";tput init
+echo -e $GREEN "All Linux packages was successfully hold.";tput init
 
 #Launch updatedb command for mlocate
 echo -e $YELLOW "Launch updatedb command for mlocate"
 if [ -x "$(which updatedb 2>/dev/null)" ]; then
 	updatedb
-	echo -e $GREEN "The mlocate database has been updated.";tput init
+	echo -e $GREEN "The mlocate database was updated.";tput init
 else
 	echo -e $YELLOW "The updatedb command not found. No action is required.";tput init
 fi
@@ -45,7 +45,7 @@ fi
 echo -e $YELLOW "Auto load VirtualBox module at boot"
 if [ -e /usr/lib/modules/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/updates/vboxdrv.ko ] && [ -e /var/lib/dkms/virtualbox/[0-9]*.[0-9]*.[0-9]*/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/x86_64/module/vboxdrv.ko ]; then
 	echo "vboxdrv" > /etc/modules-load.d/virtualbox.conf
-	echo -e $GREEN "The vboxdrv module has been added for launch at boot.";tput init
+	echo -e $GREEN "The vboxdrv module was added for launch at boot.";tput init
 else
 	echo -e $YELLOW "VirtualBox is not installed. No action is required.";tput init
 fi

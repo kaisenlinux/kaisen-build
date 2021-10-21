@@ -1,0 +1,70 @@
+#!/bin/sh
+
+YELLOW='\e[0;33m'
+GREEN='\e[1;32m'
+
+LANG=$(grep -v -E "^(#|$)" /etc/locale.gen | cut -d' ' -f1)
+TERM=linux
+export LANG
+export TERM
+
+if [ $LANG = fr_FR.UTF-8 ]; then
+echo ""
+echo $GREEN "Bienvenue sur la version \033[95mSR (System Rescue)\e[1;32m de Kaisen Linux !"
+echo $GREEN "Si vous souhaitez utiliser uniquement le mode console pour vos besoins, vous êtes au bon endroit !"
+echo $YELLOW "Si vous voulez démarrer l'interface graphique, utilisez cette commande : \033[95mstartx\e[0;33m"
+echo $YELLOW "Identifiants par défaut : \033[95mkaisen\e[0;33m/\033[95mkaisen\e[0;33m"
+echo ""
+
+elif [ $LANG = en_US.UTF-8 ]; then
+echo ""
+echo $GREEN "Welcome to the \033[95mSR (System Rescue)\e[1;32m version of Kaisen Linux!"
+echo $GREEN "If you only want to use the console mode for your needs, you've come to the right place!"
+echo $YELLOW "If you want to start the GUI, use this command: \033[95mstartx\e[0;33m"
+echo $YELLOW "Defaults credentials: \033[95mkaisen\e[0;33m/\033[95mkaisen\e[0;33m"
+echo ""
+
+elif [ $LANG = es_ES.UTF-8 ]; then
+echo ""
+echo $GREEN "¡Bienvenido a la versión \033[95mSR (System Rescue)\e[1;32m de Kaisen Linux!"
+echo $GREEN "Si sólo quieres utilizar el modo consola para tus necesidades, ¡has llegado al lugar adecuado!"
+echo $YELLOW "Si quieres iniciar la GUI, utiliza este comando: \033[95mstartx\e[0;33m"
+echo $YELLOW "Credenciales por defecto: \033[95mkaisen\e[0;33m/\033[95mkaisen\e[0;33m"
+echo ""
+
+elif [ $LANG = pt_PT.UTF-8 ]; then
+echo ""
+echo $GREEN "Bem-vindo à versão \033[95mSR (System Rescue)\e[1;32m do Kaisen Linux!"
+echo $GREEN "Se só quer usar o modo de consola para as suas necessidades, veio ao sítio certo!"
+echo $YELLOW "Se quiser iniciar a GUI, use este comando: \033[95mstartx\e[0;33m"
+echo $YELLOW "Credenciais por defeito: \033[95mkaisen\e[0;33m/\033[95mkaisen\e[0;33m"
+echo ""
+
+elif [ $LANG = it_IT.UTF-8 ]; then
+echo ""
+echo $GREEN "Benvenuti alla versione \033[95mSR (System Rescue)\e[1;32m di Kaisen Linux!"
+echo $GREEN "Se volete usare solo la modalità console per le vostre esigenze, siete venuti nel posto giusto!"
+echo $YELLOW "Se volete avviare la GUI, usate questo comando: \033[95mstartx\e[0;33m"
+echo $YELLOW "Credenziali predefinite: \033[95mkaisen\e[0;33m/\033[95mkaisen\e[0;33m"
+echo ""
+
+elif [ $LANG = de_DE.UTF-8 ]; then
+echo ""
+echo $GREEN "Willkommen bei der \033[95mSR (System Rescue)\e[1;32m Version von Kaisen Linux!"
+echo $GREEN "Wenn Sie nur den Konsolenmodus für Ihre Bedürfnisse nutzen wollen, sind Sie hier genau richtig!"
+echo $YELLOW "Wenn Sie die GUI starten möchten, verwenden Sie diesen Befehl: \033[95mstartx\e[0;33m"
+echo $YELLOW "Standard-Anmeldeinformationen: \033[95mkaisen\e[0;33m/\033[95mkaisen\e[0;33m"
+echo ""
+fi
+
+if [ $LANG != fr_FR.UTF-8 ] && [ $LANG != en_US.UTF-8 ] && [ $LANG != es_ES.UTF-8 ] && [ $LANG != pt_PT.UTF-8 ] && [ $LANG != it_IT.UTF-8 ] && [ $LANG != de_DE.UTF-8 ]; then
+echo ""
+echo $GREEN "Welcome to the \033[95mSR (System Rescue)\e[1;32m version of Kaisen Linux!"
+echo $GREEN "If you only want to use the console mode for your needs, you've come to the right place!"
+echo $YELLOW "If you want to start the GUI, use this command: \033[95mstartx\e[0;33m"
+echo $YELLOW "Defaults credentials: \033[95mkaisen\e[0;33m/\033[95mkaisen\e[0;33m"
+echo ""
+fi
+
+tput sgr0
+unset TERM

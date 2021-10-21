@@ -1,5 +1,0 @@
-#!/bin/bash
-
-set -e
-
-git clone https://github.com/ohmyzsh/ohmyzsh.git /etc/skel/.oh-my-zsh

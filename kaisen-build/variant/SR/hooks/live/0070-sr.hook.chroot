@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e
+
+YELLOW='\e[0;33m'
+GREEN='\e[1;32m'
+
+#Disable lightdm to login in console by default
+echo -e $YELLOW "Disable lightdm to login in console by default..."
+systemctl disable lightdm
+echo -e $GREEN "The lightdm service was disabled successfully.";tput init
+
+#Remove defaults motd messages to keep only custom message
+echo -e $YELLOW "Remove defaults motd messages to keep only custom message..."
+rm /etc/motd /etc/update-motd.d/10-uname
+echo -e $GREEN "Defaults motd messages was deleted successfully.";tput init
+
+#Hold packages to keep configurations when the distribution is upgrade
+echo -e $YELLOW "Hold packages to keep configurations when the distribution is upgrade..."
+apt-mark hold base-files xinit lightdm lightdm-gtk-greeter unattended-upgrades
+echo -e $GREEN "Packages was successfully hold."

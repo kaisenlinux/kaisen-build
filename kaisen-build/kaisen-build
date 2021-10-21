@@ -33,10 +33,9 @@ EXPLAINATION
 		build: build iso
 		clean: delete generated files created by kaisen-build
 
-	variant - MATE, XFCE, KDE, LXDE, SR, CONSOLE, NETINST, CUSTOM
+	variant - MATE, XFCE, KDE, LXDE, SR, NETINST, CUSTOM
 		the graphical interface to use (MATE, XFCE, KDE or LXDE)
-		or use System Rescue version (Only technicians tools, SR variant)
-		or use Console Only (no GUI, live only, CONSOLE variant)
+		or use System Rescue version (Only technicians tools, with or not GUI, SR variant)
 		or use network installer (no live, NETINST variant)
 
 	version - select your version number
@@ -71,7 +70,7 @@ else
 fi
 
 case $variant in
-	KDE|LXDE|MATE|XFCE|SR|CONSOLE)
+	KDE|LXDE|MATE|XFCE|SR)
 		lb clean
 		rm -rf cache config unpacked-initrd .build tmp images || true
 		lb build
