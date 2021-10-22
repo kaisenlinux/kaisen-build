@@ -1,3 +1,13 @@
+kaisen-build (1.8+kaisen11) kaisen-packages; urgency=medium
+
+  * Remove autorun.inf and install folder in includes.binary in the
+    CUSTOM variant
+  * Remove virtualbox-guest-dkms and virtualbox-guest-source in
+    common/package-lists/guests.list.chroot
+  * Update simple-cdd version is require
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 22 Oct 2021 13:30:45 +0200
+
 kaisen-build (1.8+kaisen10) kaisen-packages; urgency=medium
 
   * Use xz for chroot-squashfs-compression-type
