@@ -13,3 +13,7 @@ kbd
 console-data
 console-setup
 xinit
+
+#Add Windows USB key create tools
+woeusb
+woeusb-ng
