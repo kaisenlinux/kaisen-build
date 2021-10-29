@@ -1,3 +1,9 @@
+kaisen-build (1.8+kaisen14) kaisen-packages; urgency=medium
+
+  * Fix bad name package btrfs-progs
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 30 Oct 2021 01:42:27 +0200
+
 kaisen-build (1.8+kaisen13) kaisen-packages; urgency=medium
 
   * Rename install.list.binary in installer.list.binary
@@ -6,7 +12,7 @@ kaisen-build (1.8+kaisen13) kaisen-packages; urgency=medium
   * Add these packages in installer.list.binary:
     - usbutils
     - eject
-    - btrfs-profs
+    - btrfs-progs
     - xfsprogs
     - cryptsetup-initramfs
     - dmraid

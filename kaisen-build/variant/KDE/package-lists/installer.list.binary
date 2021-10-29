@@ -9,7 +9,7 @@ efibootmgr
 #Installer les divers paquets potentiellement necéssaires
 usbutils
 eject
-btrfs-profs
+btrfs-progs
 xfsprogs
 cryptsetup-initramfs
 dmraid
