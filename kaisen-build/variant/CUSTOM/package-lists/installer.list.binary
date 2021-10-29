@@ -1,6 +1,17 @@
 #Réduire l'espace occupé par le système sur le disque dur
 eatmydata
+
 #Assurer le support de GRUB pour UEFI ainsi que la bonne configuration de GRUB 
 grub-efi
 grub-efi-amd64
 efibootmgr
+
+#Installer les divers paquets potentiellement necéssaires
+usbutils
+eject
+btrfs-profs
+xfsprogs
+cryptsetup-initramfs
+dmraid
+dmsetup
+mdadm

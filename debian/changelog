@@ -1,3 +1,23 @@
+kaisen-build (1.8+kaisen13) kaisen-packages; urgency=medium
+
+  * Rename install.list.binary in installer.list.binary
+  * Move installer.list.binary in KDE, LXDE, MATE and XFCE variant
+    (deletion of common/package-lists folder)
+  * Add these packages in installer.list.binary:
+    - usbutils
+    - eject
+    - btrfs-profs
+    - xfsprogs
+    - cryptsetup-initramfs
+    - dmraid
+    - dmsetup
+    - mdadm
+  * Update Deutsch translation (thanks you h@x)
+  * Fix unable to decrypt disk on nvme
+  * Update simple-cdd version is require
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 30 Oct 2021 00:39:57 +0200
+
 kaisen-build (1.8+kaisen12) kaisen-packages; urgency=medium
 
   * Add Windows USB key create tools in SR variant
