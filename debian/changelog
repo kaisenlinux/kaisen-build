@@ -1,3 +1,9 @@
+kaisen-build (1.8+kaisen15) kaisen-packages; urgency=medium
+
+  * Update tasksel version is require
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 30 Oct 2021 16:11:58 +0200
+
 kaisen-build (1.8+kaisen14) kaisen-packages; urgency=medium
 
   * Fix bad name package btrfs-progs
