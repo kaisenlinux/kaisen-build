@@ -1,3 +1,10 @@
+kaisen-build (1.8+kaisen17) kaisen-packages; urgency=medium
+
+  * Update debian-cd version require
+  * Add custom .disk/info file for KDE, LXDE, MATE, XFCE and SR variant
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 01 Nov 2021 18:19:04 +0200
+
 kaisen-build (1.8+kaisen16) kaisen-packages; urgency=medium
 
   * Update tasksel version require
