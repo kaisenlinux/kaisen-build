@@ -1,16 +1,20 @@
 #Graphical interface
 
 #kaisen-kde
-#kaisen-lxde
+#kaisen-lxqt
 #kaisen-mate
 #kaisen-xfce
 
 #Kaisen Linux metapackages
 
 #kaisen-technicians-tools
+#kaisen-sysadmin-tools
+#kaisen-network-tools
 #kaisen-miscellaneous
 #kaisen-filesystems
 #kaisen-firmwares
+#kaisen-btrfs-snapshots
 #kaisen-services-management
-#kaisen-sysadmin-tools
-#kaisen-network-tools
+#kaisen-update
+#kaisen-documentation
+#kaisen-manpages

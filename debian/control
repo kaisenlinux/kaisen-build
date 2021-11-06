@@ -1,7 +1,7 @@
 Source: kaisen-build
 Priority: optional
 Section: kaisen-packages
-Standards-Version: 4.5.1
+Standards-Version: 4.6.1
 Build-Depends: debhelper
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 Rules-Requires-Root: no
@@ -15,10 +15,10 @@ Priority: optional
 Depends: live-build (>=1:20210902+kaisen1),
 	 live-boot,
 	 live-manual,
-	 live-config (>=11.0.2+kaisen1),
+	 live-config (>=11.0.3+kaisen1),
 	 debootstrap (>=1:1.0.123-1kaisen1),
 	 debian-cd (>=3.1.35+kaisen2),
-	 simple-cdd (>=0.6.8+kaisen16),
-	 tasksel (>=3.68+kaisen13),
+	 simple-cdd (>=0.6.8+kaisen17),
+	 tasksel (>=3.68+kaisen14),
 	 xorriso,
 Description: Kaisen Linux ISO build (amd64 arch)

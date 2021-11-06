@@ -8,7 +8,7 @@ PARAMS=""
 
 mkdir config || true
 
-if [[ "$variant" = "KDE" || "$variant" = "LXDE" || "$variant" = "MATE" || "$variant" = "XFCE" || "$variant" = "SR" ]]; then
+if [[ "$variant" = "KDE" || "$variant" = "LXQT" || "$variant" = "MATE" || "$variant" = "XFCE" || "$variant" = "SR" ]]; then
 cp -rf common/* config
 cp -rfTL variant/$variant config
 elif [[ "$variant" = "CUSTOM" ]]; then
@@ -16,7 +16,7 @@ cp -rf variant/CUSTOM/* config
 fi
 
 case $variant in
-        KDE|LXDE|MATE|XFCE)
+        KDE|LXQT|MATE|XFCE)
 	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --firmware-binary true --firmware-chroot true"
         ;;
         SR)

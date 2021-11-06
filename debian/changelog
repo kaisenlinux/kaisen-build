@@ -1,3 +1,11 @@
+kaisen-build (1.8+kaisen18) kaisen-packages; urgency=medium
+
+  * Update tasksel, simple-cdd and live-config minimal version require
+  * Replace LXDE by LXQT
+  * Update CUSTOM template
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 05 Nov 2021 21:18:46 +0200
+
 kaisen-build (1.8+kaisen17) kaisen-packages; urgency=medium
 
   * Update debian-cd version require
