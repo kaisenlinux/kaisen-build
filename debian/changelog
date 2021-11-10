@@ -1,3 +1,10 @@
+kaisen-build (1.8+kaisen19) kaisen-packages; urgency=medium
+
+  * Update tasksel minimal version require
+  * Add kaisen-sysops-tools metapackage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 10 Nov 2021 01:42:48 +0200
+
 kaisen-build (1.8+kaisen18) kaisen-packages; urgency=medium
 
   * Update tasksel, simple-cdd and live-config minimal version require

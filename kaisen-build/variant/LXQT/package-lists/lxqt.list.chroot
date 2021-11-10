@@ -5,6 +5,7 @@ kaisen-network-tools
 kaisen-miscellaneous
 kaisen-filesystems
 kaisen-firmwares
+kaisen-sysops-tools
 kaisen-btrfs-snapshots
 kaisen-services-management
 kaisen-update

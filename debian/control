@@ -19,6 +19,6 @@ Depends: live-build (>=1:20210902+kaisen1),
 	 debootstrap (>=1:1.0.123-1kaisen1),
 	 debian-cd (>=3.1.35+kaisen2),
 	 simple-cdd (>=0.6.8+kaisen17),
-	 tasksel (>=3.68+kaisen14),
+	 tasksel (>=3.68+kaisen15),
 	 xorriso,
 Description: Kaisen Linux ISO build (amd64 arch)
