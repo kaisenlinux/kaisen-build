@@ -1,3 +1,9 @@
+kaisen-build (1.8+kaisen20) kaisen-packages; urgency=medium
+
+  * Update debootstrap minimal version require for kaisen-build
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 10 Nov 2021 22:45:33 +0200
+
 kaisen-build (1.8+kaisen19) kaisen-packages; urgency=medium
 
   * Update tasksel minimal version require
