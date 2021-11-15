@@ -1,3 +1,9 @@
+kaisen-build (1.8+kaisen22) kaisen-packages; urgency=medium
+
+  * Update simple-cdd minimal version required
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 15 Nov 2021 04:04:21 +0200
+
 kaisen-build (1.8+kaisen21) kaisen-packages; urgency=medium
 
   * Add loglevel=4 to display only warnings or messages about non imminent errors
