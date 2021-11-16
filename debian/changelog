@@ -1,3 +1,9 @@
+kaisen-build (1.8+kaisen23) kaisen-packages; urgency=medium
+
+  * Add vboxnetadp and vboxnetflt modules to be launched at startup
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 16 Nov 2021 23:39:28 +0200
+
 kaisen-build (1.8+kaisen22) kaisen-packages; urgency=medium
 
   * Update simple-cdd minimal version required
