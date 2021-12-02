@@ -1,3 +1,13 @@
+kaisen-build (1.8+kaisen24) kaisen-packages; urgency=medium
+
+  * Update live-build minimal version require for kaisen-build
+  * Update simple-cdd minimal version require for kaisen-build
+  * Add of check that stop kaisen-build script if is not executed
+    with a variant argument and version argument
+  * Update config file (add new default options)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 02 Dec 2021 19:56:03 +0100
+
 kaisen-build (1.8+kaisen23) kaisen-packages; urgency=medium
 
   * Add vboxnetadp and vboxnetflt modules to be launched at startup

@@ -50,8 +50,18 @@ DOCUMENTATION
 }
 
 function kaisen-build() {
+if [ -z $variant ]; then
+	echo -e $RED "Launch this script with a valid variant name."
+	exit 1
+fi
+
 if [ ! -e variant/$variant ] && [ ! -d variant/$variant ]; then
 	echo -e $RED "The variant $variant does not exist or does not a folder in variant folder."
+	exit 1
+fi
+
+if [ -z $version ]; then
+	echo -e $RED "Launch this script with a version number."
 	exit 1
 fi
 

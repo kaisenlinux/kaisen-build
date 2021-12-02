@@ -17,13 +17,13 @@ fi
 
 case $variant in
         KDE|LXQT|MATE|XFCE)
-	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --firmware-binary true --firmware-chroot true"
+	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true"
         ;;
         SR)
-	PARAMS="$PARAMS --debian-installer none --firmware-binary true --firmware-chroot true"
+	PARAMS="$PARAMS --debian-installer none"
 	;;
 	CUSTOM)
-	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal --firmware-binary true --firmware-chroot true"
+	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal"
 	;;
 esac
 
@@ -35,46 +35,57 @@ lb config noauto \
 --apt-source-archives "true" \
 --architecture "amd64" \
 --archive-areas "main contrib non-free" \
---binary-image "iso-hybrid" \
+--backports "false" \
 --binary-filesystem "fat32" \
---build-with-chroot "true" \
+--binary-image "iso-hybrid" \
 --bootloaders "syslinux,grub-efi" \
+--build-with-chroot "true" \
 --cache "false" \
 --cache-indices "false" \
 --cache-packages "false" \
 --checksums "none" \
---chroot-squashfs-compression-type "xz" \
 --clean \
 --color \
 --debconf-frontend "noninteractive" \
+--debootstrap-options "--keyring=/usr/share/keyrings/kaisen-archive-keyring.gpg" \
+--debootstrap-script "/usr/share/debootstrap/scripts/kaisen-rolling" \
 --distribution "kaisen-rolling" \
 --distribution-binary "kaisen-rolling" \
 --distribution-chroot "kaisen-rolling" \
+--firmware-binary "true" \
+--firmware-chroot "true" \
+--hdd-label "KAISEN_LINUX_$variant_$version" \
+--initramfs "live-boot" \
+--initsystem "systemd" \
 --iso-preparer "Kevin Chevreuil - Kaisen" \
 --iso-publisher "Kevin Chevreuil - Kaisen" \
 --iso-application "Kaisen Linux $variant $version" \
 --iso-volume "Kaisen Linux $variant $version" \
+--keyring-package "kaisen-archive-keyring" \
 --linux-flavours "amd64" \
 --linux-packages "linux-image" \
---keyring-package "kaisen-archive-keyring" \
---memtest "memtest86+" \
---security "false" \
---source "false" \
---uefi-secure-boot "disable" \
---backports "false" \
---updates "false" \
---win32-loader "false" \
 --loadlin "false" \
---zsync "false" \
---system "live" \
---verbose \
+--memtest "memtest86+" \
+--mirror-binary "https://deb.kaisenlinux.org" \
+--mirror-bootstrap "https://deb.kaisenlinux.org" \
+--mirror-chroot "https://deb.kaisenlinux.org" \
+--mirror-debian-installer "https://deb.kaisenlinux.org" \
+--mode "debian" \
+--net-tarball "false" \
+--onie "false" \
 --parent-mirror-bootstrap "https://deb.kaisenlinux.org" \
 --parent-mirror-chroot "https://deb.kaisenlinux.org" \
 --parent-mirror-binary "https://deb.kaisenlinux.org" \
 --parent-mirror-debian-installer "https://deb.kaisenlinux.org" \
---mirror-bootstrap "https://deb.kaisenlinux.org" \
---mirror-chroot "https://deb.kaisenlinux.org" \
---mirror-binary "https://deb.kaisenlinux.org" \
---mirror-debian-installer "https://deb.kaisenlinux.org" \
 --parent-archive-areas "main contrib non-free" \
+--security "false" \
+--source "false" \
+--system "live" \
+--uefi-secure-boot "disable" \
+--updates "false" \
+--utc-time "true" \
+--verbose \
+--win32-loader "false" \
+--zsync "false" \
 $PARAMS \
+"$@"
