@@ -3,7 +3,7 @@
 YELLOW='\e[0;33m'
 GREEN='\e[1;32m'
 
-LANG=$(grep -v -E "^(#|$)" /etc/locale.gen | cut -d' ' -f1)
+LANG=$(grep -v -E "^(#|$)" /etc/default/locale | cut -d = -f2)
 TERM=linux
 export LANG
 export TERM

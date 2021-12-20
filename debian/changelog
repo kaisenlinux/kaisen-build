@@ -1,3 +1,9 @@
+kaisen-build (2.0+kaisen1) kaisen-packages; urgency=medium
+
+  * Add 2.0 version of 00-startx script (for SR variant)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 20 Dec 2021 04:51:44 +0100
+
 kaisen-build (2.0) kaisen-packages; urgency=medium
 
   * Update in 2.0. No changes needed
