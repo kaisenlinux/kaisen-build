@@ -23,15 +23,6 @@ do
 done
 echo -e $GREEN "All Linux packages was successfully hold.";tput init
 
-#Launch updatedb command for mlocate
-echo -e $YELLOW "Launch updatedb command for mlocate"
-if [ -x "$(which updatedb 2>/dev/null)" ]; then
-	updatedb
-	echo -e $GREEN "The mlocate database was updated.";tput init
-else
-	echo -e $YELLOW "The updatedb command not found. No action is required.";tput init
-fi
-
 #Remove bit executable for apt-btrfs-snapshot because apt-btrfs-snapshot taken snapshot during installation and not functional on live system
 echo -e $YELLOW "Remove bit executable for apt-btrfs-snapshot because apt-btrfs-snapshot taken snapshot during installation and not functional on live system"
 if [ -e /usr/bin/apt-btrfs-snapshot ] && [ -x /usr/bin/apt-btrfs-snapshot ]; then
@@ -39,15 +30,4 @@ if [ -e /usr/bin/apt-btrfs-snapshot ] && [ -x /usr/bin/apt-btrfs-snapshot ]; the
 	chmod -x /usr/bin/apt-btrfs-snapshot
 else
 	echo -e $YELLOW "The apt-btrfs-snapshot command was not found. No action is required.";tput init
-fi
-
-#Auto load VirtualBox module at boot
-echo -e $YELLOW "Auto load VirtualBox module at boot"
-if [ -e /usr/lib/modules/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/updates/vboxdrv.ko ] && [ -e /var/lib/dkms/virtualbox/[0-9]*.[0-9]*.[0-9]*/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/x86_64/module/vboxdrv.ko ] && [ -e /usr/lib/modules/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/updates/vboxnetadp.ko ] && [ -e /var/lib/dkms/virtualbox/[0-9]*.[0-9]*.[0-9]*/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/x86_64/module/vboxnetadp.ko ] && [ -e /usr/lib/modules/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/updates/vboxnetflt.ko ] && [ -e /var/lib/dkms/virtualbox/[0-9]*.[0-9]*.[0-9]*/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/x86_64/module/vboxnetflt.ko ]; then
-	echo "vboxdrv" > /etc/modules-load.d/virtualbox.conf
-	echo "vboxnetadp" >> /etc/modules-load.d/virtualbox.conf
-	echo "vboxnetflt" >> /etc/modules-load.d/virtualbox.conf
-	echo -e $GREEN "The VirtualBox modules have been added to be launched at startup.";tput init
-else
-	echo -e $YELLOW "VirtualBox is not installed. No action is required.";tput init
 fi
