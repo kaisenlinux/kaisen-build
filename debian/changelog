@@ -1,3 +1,10 @@
+kaisen-build (2.0+kaisen3) kaisen-packages; urgency=medium
+
+  * Bump confiugrations in 2.1
+  * Disable warning when no swap partition was created
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 21 Feb 2022 06:09:31 +0100
+
 kaisen-build (2.0+kaisen2) kaisen-packages; urgency=medium
 
   * Remove mlocate updatedb and virtualbox modules in
