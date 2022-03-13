@@ -1,6 +1,12 @@
+kaisen-build (2.0+kaisen4) kaisen-packages; urgency=medium
+
+  * Disable you have a mail message at login for the SR release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 13 Mar 2022 11:48:09 +0100
+
 kaisen-build (2.0+kaisen3) kaisen-packages; urgency=medium
 
-  * Bump confiugrations in 2.1
+  * Bump configurations in 2.1
   * Disable warning when no swap partition was created
 
  -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 21 Feb 2022 06:09:31 +0100
