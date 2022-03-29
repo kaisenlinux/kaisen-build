@@ -8,18 +8,14 @@ PARAMS=""
 
 mkdir config || true
 
-if [[ "$VARIANT" = "KDE" || "$VARIANT" = "LXQT" || "$VARIANT" = "MATE" || "$VARIANT" = "XFCE" ]]; then
+if [[ "$variant" = "KDE" || "$variant" = "LXQT" || "$variant" = "MATE" || "$variant" = "XFCE" || "$variant" = "SR" ]]; then
 cp -rf common/* config
-cp -rfTL variant/$VARIANT config
-elif [[ "$VARIANT" = "SR" ]]; then
-cp -rf common/* config
-rm -f config/package-lists/installer.list.binary
-cp -rfTL variant/$VARIANT config
+cp -rfTL variant/$variant config
 elif [[ "$variant" = "CUSTOM" ]]; then
 cp -rf variant/CUSTOM/* config
 fi
 
-case $VARIANT in
+case $variant in
         KDE|LXQT|MATE|XFCE)
 	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true"
         ;;
@@ -27,8 +23,8 @@ case $VARIANT in
 	PARAMS="$PARAMS --debian-installer none"
 	;;
 	CUSTOM)
-        PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal"
-        ;;
+	PARAMS="$PARAMS --debian-installer live --debian-installer-distribution kaisen-rolling --debian-installer-gui true --iso-preparer Personal --iso-publisher Personal"
+	;;
 esac
 
 lb config noauto \
@@ -58,13 +54,13 @@ lb config noauto \
 --distribution-chroot "kaisen-rolling" \
 --firmware-binary "true" \
 --firmware-chroot "true" \
---hdd-label "KAISEN_LINUX_$VARIANT_$RELEASE" \
+--hdd-label "KAISEN_LINUX_$variant_$version" \
 --initramfs "live-boot" \
 --initsystem "systemd" \
 --iso-preparer "Kevin Chevreuil - Kaisen" \
 --iso-publisher "Kevin Chevreuil - Kaisen" \
---iso-application "Kaisen Linux $VARIANT $RELEASE" \
---iso-volume "Kaisen Linux $VARIANT $RELEASE" \
+--iso-application "Kaisen Linux $variant $version" \
+--iso-volume "Kaisen Linux $variant $version" \
 --keyring-package "kaisen-archive-keyring" \
 --linux-flavours "amd64" \
 --linux-packages "linux-image" \
