@@ -5,7 +5,7 @@
 #kaisen-mate
 #kaisen-xfce
 
-#Kaisen Linux metapackages
+#Kaisen Linux packages and metapackages
 
 #kaisen-technicians-tools
 #kaisen-sysadmin-tools
@@ -18,3 +18,5 @@
 #kaisen-update
 #kaisen-documentation
 #kaisen-manpages
+#kaisen-update
+#kaisen-conky

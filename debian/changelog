@@ -1,3 +1,17 @@
+kaisen-build (2.0+kaisen5) kaisen-packages; urgency=medium
+
+  * The arguments for the build are now named instead of positioned
+  * The default values defined when no argument is used for the build
+    are MATE for the variant and NULL for the release number
+  * Number release in dynamically defined menus
+  * Variables in uppercase
+  * Binary ISO menus are moved in common/includes.binary
+  * Add auto/clean script
+  * Move variant/*/installer.list.binary in common/package-lists
+  * Add new packages in CUSTOM variant
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 29 Mar 2022 03:18:48 +0100
+
 kaisen-build (2.0+kaisen4) kaisen-packages; urgency=medium
 
   * Disable you have a mail message at login for the SR release
