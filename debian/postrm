@@ -6,7 +6,7 @@ case "$1" in
 	upgrade|full-upgrade|remove|autoremove|downgrade|abort-upgrade)
     for users in $(awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd | cut -d: -f1)
     do
-    find /home/$users/kaisen-build/{auto,common,variant/KDE,variant/LXQT,variant/MATE,variant/XFCE,variant/SR,variant/NETINST,kaisen-build} 2> /dev/null | xargs rm -rf
+    	find /home/$users/kaisen-build/{auto,common,variant/KDE,variant/LXQT,variant/MATE,variant/XFCE,variant/SR,variant/NETINST,kaisen-build} 2> /dev/null | xargs rm -rf
     done
 ;;
 esac
@@ -14,8 +14,8 @@ esac
 if [[ "$1" = "purge" ]]; then
 	for users in $(awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd | cut -d: -f1)
 	do
-	find /home/$users/kaisen-build | xargs rm -rf || true
-	rm -rf /usr/share/kaisen-build 2> /dev/null || true
+		find /home/$users/kaisen-build | xargs rm -rf || true
+		rm -rf /usr/share/kaisen-build 2> /dev/null || true
 	done
 fi
 
