@@ -1,3 +1,11 @@
+kaisen-build (2.0+kaisen6) kaisen-packages; urgency=medium
+
+  * Fix sed patterns for files in variant/NETINST folder
+  * Add .gitkeep file in all empty folders in variant/CUSTOM
+  * Bump minimal version required for live-config at 11.0.3+kaisen2
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 29 Mar 2022 18:27:41 +0100
+
 kaisen-build (2.0+kaisen5) kaisen-packages; urgency=medium
 
   * The arguments for the build are now named instead of positioned
