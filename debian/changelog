@@ -1,3 +1,10 @@
+kaisen-build (2.0+kaisen7) kaisen-packages; urgency=medium
+
+  * Add sed pattern in the auto/config file to delete installer
+    entries for SYSLINUX and GRUB for the SR release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 04 Apr 2022 04:56:02 +0100
+
 kaisen-build (2.0+kaisen6) kaisen-packages; urgency=medium
 
   * Fix sed patterns for files in variant/NETINST folder

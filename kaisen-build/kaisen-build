@@ -98,7 +98,7 @@ case $VARIANT in
 esac
 
 case $VARIANT in
-    CUSTOM)
+	CUSTOM)
 		lb build
 		mv live-image-amd64.hybrid.iso ../kaisenlinuxCUSTOM-amd64-$RELEASE.iso
 		echo -e $YELLOW "ISO can be found in ../kaisenlinuxCUSTOM-amd64-$RELEASE.iso";tput init
