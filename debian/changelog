@@ -1,3 +1,14 @@
+kaisen-build (2.0+kaisen9) kaisen-packages; urgency=medium
+
+  * Automatically enable force UEFI installation
+  * Add --include option for debootstrap to add this folling packages :
+    - zsh
+    - bash-completion
+    - ca-certificates
+  * Update control file
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 21 Apr 2022 01:42:52 +0100
+
 kaisen-build (2.0+kaisen8) kaisen-packages; urgency=medium
 
   * Disable the prompt when no ethernet adapter was detected

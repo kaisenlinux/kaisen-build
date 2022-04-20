@@ -54,7 +54,7 @@ lb config noauto \
 --clean \
 --color \
 --debconf-frontend "noninteractive" \
---debootstrap-options "--keyring=/usr/share/keyrings/kaisen-archive-keyring.gpg" \
+--debootstrap-options "--include=zsh,bash-completion,ca-certificates --keyring=/usr/share/keyrings/kaisen-archive-keyring.gpg" \
 --debootstrap-script "/usr/share/debootstrap/scripts/kaisen-rolling" \
 --distribution "kaisen-rolling" \
 --distribution-binary "kaisen-rolling" \
