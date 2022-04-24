@@ -1,7 +1,13 @@
+kaisen-build (2.0+kaisen10) kaisen-packages; urgency=medium
+
+  * Display kaisenlinux instead of debian as default hostname
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 24 Apr 2022 22:31:43 +0100
+
 kaisen-build (2.0+kaisen9) kaisen-packages; urgency=medium
 
   * Automatically enable force UEFI installation
-  * Add --include option for debootstrap to add this folling packages :
+  * Add --include option for debootstrap to add this following packages :
     - zsh
     - bash-completion
     - ca-certificates
