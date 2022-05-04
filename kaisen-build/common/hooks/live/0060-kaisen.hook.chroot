@@ -8,8 +8,8 @@ RED='\e[1;31m'
 
 #Disable additionals services to reduce used RAM
 echo -e $YELLOW "Disable additionals services to reduce used RAM"
-if [ -e /opt/services/all-services-disable ] && [ -x /opt/services/all-services-disable ]; then
-	/opt/services/all-services-disable
+if [ -e /usr/share/kaisen-services-management/all-services-disable ] && [ -x /usr/share/kaisen-services-management/all-services-disable ]; then
+	/usr/share/kaisen-services-management/all-services-disable
 	echo -e $GREEN "All services was disabled.";tput init
 else
 	echo -e $YELLOW "The package kaisen-services-management has not found. Not all services was disabled.";tput init

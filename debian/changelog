@@ -1,3 +1,9 @@
+kaisen-build (2.0+kaisen12) kaisen-packages; urgency=medium
+
+  * Updating the path where are the services scripts
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 04 May 2022 23:53:54 +0100
+
 kaisen-build (2.0+kaisen11) kaisen-packages; urgency=medium
 
   * Really display kaisenlinux instead of debian as default hostname
