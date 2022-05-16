@@ -1,3 +1,9 @@
+kaisen-build (2.0+kaisen13) kaisen-packages; urgency=medium
+
+  * Allow host name change during system installation
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 16 May 2022 18:23:27 +0100
+
 kaisen-build (2.0+kaisen12) kaisen-packages; urgency=medium
 
   * Updating the path where are the services scripts
