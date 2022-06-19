@@ -10,13 +10,13 @@ RED='\e[1;31m'
 echo -e $YELLOW "Disable additionals services to reduce used RAM"
 if [ -e /usr/share/kaisen-services-management/all-services-disable ] && [ -x /usr/share/kaisen-services-management/all-services-disable ]; then
 	/usr/share/kaisen-services-management/all-services-disable
-	echo -e $GREEN "All services was disabled.";tput init
+	echo -e $GREEN "All services were disabled.";tput init
 else
-	echo -e $YELLOW "The package kaisen-services-management has not found. Not all services was disabled.";tput init
+	echo -e $YELLOW "The package kaisen-services-management has not found. Not service was disabled.";tput init
 fi
 
 #Hold Linux for fix broken usb persistence key after Linux upgrade
-echo -e $YELLOW "Hold Linux for fix broken usb persistence key after Linux upgrade"
+echo -e $YELLOW "Hold Linux to fix broken usb persistence key after Linux upgrade"
 for kernel in $(dpkg --get-selections | grep '^linux-' | awk '{ print $1 }' && dpkg --get-selections | grep '^libcpupower1' | awk '{ print $1 }')
 do
 	apt-mark hold $kernel

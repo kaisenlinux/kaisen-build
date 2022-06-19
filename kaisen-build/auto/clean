@@ -6,7 +6,7 @@ GREEN='\e[1;32m'
 RED='\e[1;31m'
 
 if [[ $EUID -ne 0 ]]; then
-        echo -e $RED "Run this script as root or with the sudo command."
+        echo -e $RED "Run this script as root or with the sudo command. Aborting."
         exit 1
 fi
 
