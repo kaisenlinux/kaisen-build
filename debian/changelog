@@ -1,3 +1,9 @@
+kaisen-build (2.1+kaisen3) kaisen-packages; urgency=medium
+
+  * Rename the 00-startx file in 00-kaisen-startx
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 20 Aug 2022 02:36:54 +0100
+
 kaisen-build (2.1+kaisen2) kaisen-packages; urgency=medium
 
   * Add loglevel=4 for live entries
