@@ -59,8 +59,8 @@ lb config noauto \
 --distribution "kaisen-rolling" \
 --distribution-binary "kaisen-rolling" \
 --distribution-chroot "kaisen-rolling" \
---firmware-binary "true" \
---firmware-chroot "true" \
+--firmware-binary "false" \
+--firmware-chroot "false" \
 --hdd-label "KAISEN_LINUX_$VARIANT_$RELEASE" \
 --initramfs "live-boot" \
 --initsystem "systemd" \

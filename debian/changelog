@@ -1,3 +1,10 @@
+kaisen-build (2.1+kaisen4) kaisen-packages; urgency=medium
+
+  * Update versions required for dependancies
+  * Not include firmwares in the chroot and in the ISO
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 04 Sep 2022 20:49:16 +0100
+
 kaisen-build (2.1+kaisen3) kaisen-packages; urgency=medium
 
   * Rename the 00-startx file in 00-kaisen-startx
