@@ -1,3 +1,15 @@
+kaisen-build (2.1+kaisen5) kaisen-packages; urgency=medium
+
+  * Adding packages:
+    - open-vm-tools-containerinfo
+    - open-vm-tools-salt-minion
+    - open-vm-tools-sdmp
+  * Add the exclusion of ^linux-firmware packages and the linux-base package
+    from the packages to hold
+  * Add the vboxsf as secondary group for the kaisen live user
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 11 Sep 2022 04:32:54 +0100
+
 kaisen-build (2.1+kaisen4) kaisen-packages; urgency=medium
 
   * Update versions required for dependancies

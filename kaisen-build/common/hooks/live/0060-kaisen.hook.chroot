@@ -17,7 +17,7 @@ fi
 
 #Hold Linux for fix broken usb persistence key after Linux upgrade
 echo -e $YELLOW "Hold Linux to fix broken usb persistence key after Linux upgrade"
-for kernel in $(dpkg --get-selections | grep '^linux-' | awk '{ print $1 }' && dpkg --get-selections | grep '^libcpupower1' | awk '{ print $1 }')
+for kernel in $(dpkg --get-selections | grep '^linux-' | grep -v '^linux-firmware' | grep -v '^linux-base' | awk '{ print $1 }' && dpkg --get-selections | grep '^libcpupower1' | awk '{ print $1 }')
 do
 	apt-mark hold $kernel
 done

@@ -2,6 +2,9 @@ virtualbox-guest-utils
 virtualbox-guest-x11
 open-vm-tools
 open-vm-tools-desktop
+open-vm-tools-containerinfo
+open-vm-tools-salt-minion
+open-vm-tools-sdmp
 xserver-xorg-video-qxl
 qemu-guest-agent
 spice-vdagent
