@@ -15,3 +15,6 @@ cryptsetup-initramfs
 dmraid
 dmsetup
 mdadm
+
+#Add BTRFS snapshots tools
+kaisen-btrfs-snapshots

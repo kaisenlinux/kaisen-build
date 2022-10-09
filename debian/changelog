@@ -1,3 +1,12 @@
+kaisen-build (2.1+kaisen6) kaisen-packages; urgency=medium
+
+  * The kaisen-btrfs-snapshots metapackage is now included directly in the ISO file
+    and not the live system
+  * Update of english texts for live hooks
+  * Revert to the default terminal color after echo commands are executed by the hooks files
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 06 Oct 2022 03:57:26 +0100
+
 kaisen-build (2.1+kaisen5) kaisen-packages; urgency=medium
 
   * Adding packages:

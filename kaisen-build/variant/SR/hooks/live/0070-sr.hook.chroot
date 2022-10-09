@@ -5,22 +5,22 @@ set -e
 YELLOW='\e[0;33m'
 GREEN='\e[1;32m'
 
-#Disable lightdm to login in console by default
-echo -e $YELLOW "Disable lightdm to login in console by default..."
+#Disable lightdm to login with the console by default
+echo -e $YELLOW "Disable lightdm to login within the console by default...";tput init
 systemctl disable lightdm
 echo -e $GREEN "The lightdm service was disabled successfully.";tput init
 
-#Remove defaults motd messages to keep only custom message
-echo -e $YELLOW "Remove defaults motd messages to keep only custom message..."
+#Remove defaults motd messages to keep only the Kaisen Linux custom message
+echo -e $YELLOW "Remove defaults motd messages to keep only the Kaisen Linux custom message...";tput init
 rm /etc/motd /etc/update-motd.d/10-uname
 echo -e $GREEN "Defaults motd messages were deleted successfully.";tput init
 
-#Hold packages to keep configurations when the distribution is upgrade
-echo -e $YELLOW "Hold packages to keep configurations when the distribution is upgrade..."
+#Hold packages to keep configurations when the distribution is upgraded
+echo -e $YELLOW "Hold packages to keep configurations when the distribution is upgraded...";tput init
 apt-mark hold base-files xinit lightdm lightdm-gtk-greeter unattended-upgrades
-echo -e $GREEN "Packages were successfully hold."
+echo -e $GREEN "Packages were successfully hold.";tput init
 
 #Disable you have no mail message at login
-echo -e $YELLOW "Disable you have no mail message at login"
+echo -e $YELLOW "Disable you have no mail message at login...";tput init
 sed -i 's/\/var\/mail/\/dev\/null/g' /etc/login.defs
-echo -e $GREEN "You have no mail message was disabled successfully."
+echo -e $GREEN "The you have no mail message was disabled successfully.";tput init
