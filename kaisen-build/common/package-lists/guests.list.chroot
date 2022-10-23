@@ -10,3 +10,4 @@ qemu-guest-agent
 spice-vdagent
 spice-webdavd
 hyperv-daemons
+kaisen-live-guest-additions

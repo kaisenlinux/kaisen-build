@@ -1,3 +1,11 @@
+kaisen-build (2.1+kaisen7) kaisen-packages; urgency=medium
+
+  * Improvements and simplification of the 0060-kaisen script
+  * Add the kaisen-live-guest-additions package in the guests packages list file
+  * Update the simple-cdd version required
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 23 Oct 2022 17:35:53 +0100
+
 kaisen-build (2.1+kaisen6) kaisen-packages; urgency=medium
 
   * The kaisen-btrfs-snapshots metapackage is now included directly in the ISO file
