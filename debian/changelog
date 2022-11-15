@@ -1,3 +1,12 @@
+kaisen-build (2.1+kaisen8) kaisen-packages; urgency=medium
+
+  * Add memtest in the utilites menu for the UEFI mode
+  * Add the vga=788 cmdline for the failsafe mode live entries
+  * Use nosplash instead of splash for the failsafe mode
+  * Update the minimal version required for the live-build and simple-cdd dependancies 
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 15 Nov 2022 14:17:33 +0100
+
 kaisen-build (2.1+kaisen7) kaisen-packages; urgency=medium
 
   * Improvements and simplification of the 0060-kaisen script
