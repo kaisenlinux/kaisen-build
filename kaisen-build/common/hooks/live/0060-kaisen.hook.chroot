@@ -22,3 +22,9 @@ do
 	apt-mark hold $kernel
 done
 echo -e $GREEN "All Linux packages were successfully hold.";tput init
+
+#Update the files database for the plocate command
+if command -v updatedb &> /dev/null
+then
+	updatedb
+fi
