@@ -1,3 +1,9 @@
+kaisen-build (2.1+kaisen10) kaisen-packages; urgency=medium
+
+  * Install the kaisen-exegol metapackage with KDE, LXQT, MATE and XFCE
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 05 Dec 2022 03:19:13 +0100
+
 kaisen-build (2.1+kaisen9) kaisen-packages; urgency=medium
 
   * Add the update of the database for the plocate command
