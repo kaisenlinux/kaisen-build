@@ -1,9 +1,10 @@
 kaisen-build (2.2) kaisen-packages; urgency=medium
 
   * Bump the version to 2.2
-  * No changes needed
+  * Update the hook file
+  * Push on prod
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 08 Dec 2022 18:05:21 +0100
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 10 Dec 2022 00:31:24 +0100
 
 kaisen-build (2.1+kaisen10) kaisen-packages; urgency=medium
 
