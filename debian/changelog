@@ -1,9 +1,15 @@
+kaisen-build (2.2+kaisen2) kaisen-packages; urgency=medium
+
+  * Add efibootmgr, sbsigntool and mokutil for the SR variant
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 17 Feb 2023 23:45:09 +0100
+
 kaisen-build (2.2+kaisen1) kaisen-packages; urgency=medium
 
   * Fix no the live user kaisen in the vboxsf group
   * Add the live user kaisen in the gns3 and docker groups by default
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 30 Jan 2022 21:35:59 +0100
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 30 Jan 2023 21:35:59 +0100
 
 kaisen-build (2.2) kaisen-packages; urgency=medium
 

@@ -17,3 +17,8 @@ xinit
 #Add Windows USB key create tools
 woeusb
 woeusb-ng
+
+#Add tools to manage the UEFI
+efibootmgr
+sbsigntool
+mokutil
