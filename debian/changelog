@@ -1,3 +1,11 @@
+kaisen-build (2.2+kaisen3) kaisen-packages; urgency=medium
+
+  * Update required dependancies
+  * Update memtest entries for the new upstream live-build release
+  * Add the non-free-firmware area for all ISO
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 10 Mar 2023 19:55:47 +0100
+
 kaisen-build (2.2+kaisen2) kaisen-packages; urgency=medium
 
   * Add efibootmgr, sbsigntool and mokutil for the SR variant

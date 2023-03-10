@@ -41,7 +41,7 @@ lb config noauto \
 --apt-secure "true" \
 --apt-source-archives "true" \
 --architecture "amd64" \
---archive-areas "main contrib non-free" \
+--archive-areas "main contrib non-free non-free-firmware" \
 --backports "false" \
 --binary-filesystem "fat32" \
 --binary-image "iso-hybrid" \
@@ -84,7 +84,7 @@ lb config noauto \
 --parent-mirror-chroot "https://deb.kaisenlinux.org" \
 --parent-mirror-binary "https://deb.kaisenlinux.org" \
 --parent-mirror-debian-installer "https://deb.kaisenlinux.org" \
---parent-archive-areas "main contrib non-free" \
+--parent-archive-areas "main contrib non-free non-free-firmware" \
 --security "false" \
 --source "false" \
 --system "live" \
