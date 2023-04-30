@@ -1,3 +1,10 @@
+kaisen-build (2.2+kaisen8) kaisen-packages; urgency=medium
+
+  * Remove the enforcing of the ejection of the CDROM after the installation
+  * Update the version required for dependancies
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 30 Apr 2023 15:21:06 +0100
+
 kaisen-build (2.2+kaisen7) kaisen-packages; urgency=medium
 
   * Force the ejection of the CDROM after the installation
