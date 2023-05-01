@@ -1,3 +1,15 @@
+kaisen-build (2.2+kaisen9) kaisen-packages; urgency=medium
+
+  * Remove -f and -s args for the wrapper
+  * Exec a clean before a build
+  * The -c arg will exit after the execution
+  * Updated link to the full documentation
+  * Improved use of the clean function in the wrapper
+  * Add confs function is the wrapper to force the application of confs
+    for the NETINST ISO after a clean
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 01 May 2023 19:04:27 +0100
+
 kaisen-build (2.2+kaisen8) kaisen-packages; urgency=medium
 
   * Remove the enforcing of the ejection of the CDROM after the installation
