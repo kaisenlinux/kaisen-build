@@ -1,3 +1,9 @@
+kaisen-build (2.2+kaisen10) kaisen-packages; urgency=medium
+
+  * Reset color after the build of the NETINST
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 07 May 2023 11:44:49 +0100
+
 kaisen-build (2.2+kaisen9) kaisen-packages; urgency=medium
 
   * Remove -f and -s args for the wrapper

@@ -124,7 +124,7 @@ case $VARIANT in
 		--dist kaisen-rolling \
 		--debian-mirror https://deb.kaisenlinux.org
 		mv images/kaisen-Rolling-amd64-NETINST-1.iso ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso
-		echo -e $YELLOW "ISO can be found in ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso"
+		echo -e $YELLOW "ISO can be found in ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso";tput init
 		clean
 	;;
 esac
