@@ -22,4 +22,5 @@ Depends: live-build (>=2:20230131-1kaisen),
 	 tasksel (>=3.72+kaisen1),
 	 xorriso,
 	 util-linux,
+	 mktorrent,
 Description: Kaisen Linux ISO build (amd64 arch)

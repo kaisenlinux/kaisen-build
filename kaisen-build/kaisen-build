@@ -94,7 +94,11 @@ case $VARIANT in
 		confs
 		lb build
 		mv live-image-amd64.hybrid.iso ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso
-		echo -e $YELLOW "ISO can be found in ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso";tput init
+		echo -e $GREEN "ISO can be found in ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso";tput init
+		echo -e $YELLOW "Generating torrent file...";tput init
+		mktorrent -p -a "udp://torrent.kaisenlinux.org/announce:6969" -a "http://torrent.kaisenlinux.org/announce:6969" -w "https://iso.kaisenlinux.org/rolling/kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso" -c "Official Kaisen Linux $RELEASE $VARIANT ISO. Built by the Kaisen Linux team." ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso
+		mv kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso.torrent ../
+		echo -e $GREEN "Torrent generation complete. Can be found in ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso.torrent";tput init
 		clean
 	;;
 esac
@@ -124,7 +128,11 @@ case $VARIANT in
 		--dist kaisen-rolling \
 		--debian-mirror https://deb.kaisenlinux.org
 		mv images/kaisen-Rolling-amd64-NETINST-1.iso ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso
-		echo -e $YELLOW "ISO can be found in ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso";tput init
+		echo -e $GREEN "ISO can be found in ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso";tput init
+		echo -e $YELLOW "Generating torrent file...";tput init
+		mktorrent -p -a "udp://torrent.kaisenlinux.org/announce:6969" -a "http://torrent.kaisenlinux.org/announce:6969" -w "https://iso.kaisenlinux.org/rolling/kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso" -c "Official Kaisen Linux $RELEASE $VARIANT ISO. Built by the Kaisen Linux team." ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso
+		mv kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso.torrent ../
+		echo -e $GREEN "Torrent generation complete. Can be found in ../kaisenlinuxrolling$RELEASE-amd64-$VARIANT.iso.torrent";tput init
 		clean
 	;;
 esac
