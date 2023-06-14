@@ -1,7 +1,19 @@
+kaisen-build (2.3+kaisen2) kaisen-packages; urgency=medium
+
+  * Bump the version to ensure updates
+  * No changes needed
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 14 Jun 2023 12:40:12 +0100
+
+kaisen-build (2.3+kaisen1) kaisen-packages; urgency=medium
+
+  * Support for the ability to create torrents
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 05 Jun 2023 02:03:54 +0100
+
 kaisen-build (2.3) kaisen-packages; urgency=medium
 
   * Bump the version to 2.3
-  * Support for the ability to create torrents
 
  -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 18 May 2023 17:12:47 +0100
 
