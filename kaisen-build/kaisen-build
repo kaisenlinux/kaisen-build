@@ -64,7 +64,7 @@ if [[ "$EUID" -ne 0 ]]; then
 fi
 
 if [ ! -e variant/$VARIANT ] && [ ! -d variant/$VARIANT ]; then
-        echo -e $RED "The variant $VARIANT does not exist or does not a folder in the variant folder."
+        echo -e $RED "The variant $VARIANT does not exist nor is a folder in the variant directory.."
         exit 1
 fi
 
