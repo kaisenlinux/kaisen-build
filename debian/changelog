@@ -1,3 +1,9 @@
+kaisen-build (2.3+kaisen3) kaisen-packages; urgency=medium
+
+  * Port before announce for trackers generation
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 23 Jun 2023 15:15:42 +0100
+
 kaisen-build (2.3+kaisen2) kaisen-packages; urgency=medium
 
   * Bump the version to ensure updates
