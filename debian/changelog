@@ -1,3 +1,9 @@
+kaisen-build (2.3+kaisen6) kaisen-packages; urgency=medium
+
+  * Replace tput init by tput sgr0 in the kaisen-build script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 13 Mar 2024 01:04:03 +0100
+
 kaisen-build (2.3+kaisen5) kaisen-packages; urgency=medium
 
   * Add the new splash.png
