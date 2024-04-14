@@ -13,6 +13,7 @@ kbd
 console-data
 console-setup
 xinit
+gpm
 
 #Add Windows USB key create tools
 woeusb

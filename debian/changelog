@@ -1,3 +1,10 @@
+kaisen-build (2.3+kaisen7) kaisen-packages; urgency=medium
+
+  * Add the mouse support for the SR edition
+  * Remove the compat file
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 14 Apr 2024 20:47:51 +0100
+
 kaisen-build (2.3+kaisen6) kaisen-packages; urgency=medium
 
   * Replace tput init by tput sgr0 in the kaisen-build script

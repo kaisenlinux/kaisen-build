@@ -2,7 +2,7 @@ Source: kaisen-build
 Priority: optional
 Section: kaisen-packages
 Standards-Version: 4.6.1
-Build-Depends: debhelper
+Build-Depends: debhelper-compat (= 13)
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 Rules-Requires-Root: no
 Homepage: https://kaisenlinux.org
