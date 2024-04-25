@@ -1,3 +1,9 @@
+kaisen-build (2.3+kaisen8) kaisen-packages; urgency=medium
+
+  * Replace the tput sgr0 command by a BASH escape sequence to reset the color
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 25 Apr 2024 07:17:53 +0200
+
 kaisen-build (2.3+kaisen7) kaisen-packages; urgency=medium
 
   * Add the mouse support for the SR edition
