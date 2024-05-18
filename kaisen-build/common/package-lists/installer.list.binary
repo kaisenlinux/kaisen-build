@@ -5,6 +5,8 @@ eatmydata
 grub-efi
 grub-efi-amd64
 efibootmgr
+shim-signed
+shim-unsigned
 
 #Installer les divers paquets potentiellement necéssaires
 usbutils
@@ -12,7 +14,6 @@ eject
 btrfs-progs
 xfsprogs
 cryptsetup-initramfs
-dmraid
 dmsetup
 mdadm
 

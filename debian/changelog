@@ -1,3 +1,10 @@
+kaisen-build (2.3+kaisen10) kaisen-packages; urgency=medium
+
+  * Remove the dmraid package for the inclusion into the ISO file
+  * Add the shim-signed and shim-unsigned package into the ISO file
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 19 May 2024 00:12:03 +0200
+
 kaisen-build (2.3+kaisen9) kaisen-packages; urgency=medium
 
   * Add the new 3.0 Kaisen splash.png file
