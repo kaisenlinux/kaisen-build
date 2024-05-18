@@ -1,3 +1,9 @@
+kaisen-build (2.3+kaisen9) kaisen-packages; urgency=medium
+
+  * Add the new 3.0 Kaisen splash.png file
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 18 May 2024 03:08:29 +0200
+
 kaisen-build (2.3+kaisen8) kaisen-packages; urgency=medium
 
   * Replace the tput sgr0 command by a BASH escape sequence to reset the color
