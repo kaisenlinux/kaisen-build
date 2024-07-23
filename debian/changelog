@@ -1,3 +1,9 @@
+kaisen-build (2.3+kaisen11) kaisen-packages; urgency=medium
+
+  * Update dependancies version
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 23 Jul 2024 12:24:54 +0200
+
 kaisen-build (2.3+kaisen10) kaisen-packages; urgency=medium
 
   * Remove the dmraid package for the inclusion into the ISO file
