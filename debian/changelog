@@ -6,7 +6,7 @@ kaisen-build (2.3+kaisen12) kaisen-packages; urgency=medium
     - No build with the 3.2.1 deiban-cd release
     - Kernel panic (no drm modules loaded)
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 11 Aug 2024 01:16:46 +0200
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 11 Aug 2024 01:33:11 +0200
 
 kaisen-build (2.3+kaisen11) kaisen-packages; urgency=medium
 
