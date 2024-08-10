@@ -9,8 +9,8 @@ BASEDIR=$(pwd)
 cd $CDDIR
 
 change_text() {
-    sed -i -e 's|_Kaisen Linux installer menu (BIOS mode)|Kaisen Linux Rolling NETINST|g' \
-	-e 's|Kaisen GNU/Linux Rolling|Kaisen Linux Rolling NETINST|g' \
+    sed -i -e 's|_Kaisen Linux installer menu (BIOS mode)|Kaisen Linux Rolling NETINST 3.0RC3|g' \
+	-e 's|Kaisen GNU/Linux Rolling|Kaisen Linux Rolling NETINST 3.0RC3|g' \
 	-e 's|Debian GNU/Linux|Kaisen GNU/Linux|g' \
 	"$@"
 }
@@ -21,6 +21,9 @@ if [ -e ../boot$DISKNUM/isolinux/menu.cfg ]; then
 fi
 if [ -d boot/grub/theme ] && [ -s boot/grub/theme ]; then
     change_text boot/grub/theme/*
+fi
+if [ -e boot/grub/grub.cfg ]; then
+    sed -i -e 's/if loadfont $font ; then/if loadfont $prefix\/font.pf2 ; then/g' boot/grub/grub.cfg
 fi
 if [ -e autorun.inf ]; then
     change_text autorun.inf

@@ -1,3 +1,13 @@
+kaisen-build (2.3+kaisen12) kaisen-packages; urgency=medium
+
+  * Bump package version of dependancies
+  * Fix following bugs with the NETINST variant:
+    - No GRUB font loaded
+    - No build with the 3.2.1 deiban-cd release
+    - Kernel panic (no drm modules loaded)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 11 Aug 2024 01:16:46 +0200
+
 kaisen-build (2.3+kaisen11) kaisen-packages; urgency=medium
 
   * Update dependancies version
