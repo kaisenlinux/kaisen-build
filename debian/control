@@ -12,14 +12,14 @@ Vcs-Browser: https://gitlab.com/kaisenlinux/packages/kaisen-build
 Package: kaisen-build
 Architecture: amd64
 Priority: optional
-Depends: live-build (>=2:20230502-1kaisen),
+Depends: live-build (>=2:20250810-1kaisen),
 	 live-boot,
 	 live-manual,
 	 live-config (>=11.0.3+kaisen2),
-	 debootstrap (>=1:1.0.137-2kaisen),
-	 debian-cd (>=3.2.1-1kaisen),
-	 simple-cdd (>=0.6.9+kaisen1),
-	 tasksel (>=3.75+kaisen1),
+	 debootstrap (>=1:1.0.141-1kaisen),
+	 debian-cd (>=3.2.2-1kaisen),
+	 simple-cdd (>=0.6.9+kaisen5),
+	 tasksel (>=3.82+kaisen1),
 	 xorriso,
 	 util-linux,
 	 mktorrent,

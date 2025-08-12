@@ -28,3 +28,6 @@ if command -v updatedb &> /dev/null
 then
 	updatedb
 fi
+
+#Remove the kaisen-lib64 package (no longer used)
+apt-get autoremove --purge kaisen-lib64 -y

@@ -1,3 +1,12 @@
+kaisen-build (3.0) kaisen-packages; urgency=medium
+
+  * Bump package version of dependancies
+  * Use KDE by default instead of MATE if no VARIANT is specified
+  * Remove the kaisen-lib64 with the hook script
+  * Update symlinks for normal hooks scripts
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 10 Aug 2025 04:03:16 +0200
+
 kaisen-build (2.3+kaisen12) kaisen-packages; urgency=medium
 
   * Bump package version of dependancies

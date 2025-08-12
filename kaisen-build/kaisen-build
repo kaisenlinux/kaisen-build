@@ -70,7 +70,7 @@ if [ ! -e variant/$VARIANT ] && [ ! -d variant/$VARIANT ]; then
 fi
 
 if [ -z $VARIANT ]; then
-	VARIANT="MATE"
+	VARIANT="KDE"
 fi
 
 if [ -z $RELEASE ]; then
